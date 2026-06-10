@@ -1,0 +1,17 @@
+# Python
+backend/config.py
+backend/scorecard.db
+backend/__pycache__/
+backend/venv/
+backend/*.pyc
+backend/kpis/__pycache__/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Misc
+*.pyc
+*.pem
+.env
+.DS_Store
