@@ -7,19 +7,19 @@ const api = axios.create({
 })
 
 api.interceptors.request.use(req => {
-  console.log(`[API →] ${req.method?.toUpperCase()} ${req.url}`, req.params || '')
+  console.log(`[API →] ${req.method?.toUpperCase()} ${req.url} - scorecard.js:10`, req.params || '')
   return req
 })
 
 api.interceptors.response.use(
   res => {
-    console.log(`[API ✓] ${res.status} ${res.config.url}`)
+    console.log(`[API ✓] ${res.status} ${res.config.url} - scorecard.js:16`)
     return res
   },
   err => {
     const status = err.response?.status
     const url    = err.config?.url
-    console.error(`[API ✗] ${status ?? 'NETWORK'} ${url}`, err.message)
+    console.error(`[API ✗] ${status ?? 'NETWORK'} ${url} - scorecard.js:22`, err.message)
     return Promise.reject(err)
   }
 )

@@ -18,7 +18,7 @@ export default function CacheStatus() {
   const [status, setStatus]     = useState({})
   const [loading, setLoading]   = useState(false)
   const [refreshing, setRefreshing] = useState(false)
-  const { month, year } = useStore()
+  const { selectedMonth: month, selectedYear: year } = useStore()
 
   const fetchStatus = async () => {
     setLoading(true)
