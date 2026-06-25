@@ -4,6 +4,37 @@ import importlib, time
 from config import TIERS
 import local_db
 
+# ── Fallback working-days helper (replaces old viasocket.get_working_days)
+# Used only when a person has ZERO rows in leaves/late_comings/early_leavings
+# (i.e. they don't exist in keka_attendance.py's output at all). The old
+# viasocket function did pure full-calendar-month math with no awareness of
+# the current in-progress month, which produced a stale "26" for June while
+# everyone with real Keka data correctly showed "20" (capped at yesterday).
+from kpis.keka_attendance import _working_days as _keka_working_days, DEFAULT_OFF_DAYS
+from datetime import date as _date, timedelta as _timedelta
+import calendar as _calendar
+
+def _fallback_working_days(year, month):
+    """
+    Last-resort working-days estimate for a person with no Keka data at
+    all this month. Caps at YESTERDAY if year/month is the current,
+    in-progress month (matching keka_attendance.py's own logic exactly).
+    Uses Sunday-only (DEFAULT_OFF_DAYS) since there's no specific person
+    here to look up a real weekly_off_policy for.
+    """
+    month_start = _date(year, month, 1)
+    _, days_in_month = _calendar.monthrange(year, month)
+    calendar_month_end = _date(year, month, days_in_month)
+
+    today = _date.today()
+    if year == today.year and month == today.month:
+        month_end = min(calendar_month_end, today - _timedelta(days=1))
+    else:
+        month_end = calendar_month_end
+
+    return _keka_working_days(month_start, month_end, off_days=DEFAULT_OFF_DAYS)
+
+
 CONVERSION_KPI_KEYS = frozenset({'post_conversion','delayed_conversion','missing_status','reviews'})
 ATTENDANCE_KPI_KEYS = frozenset({'leaves','late_comings','early_leavings','independence'})
 _CONV_DEPTS         = {'Conversion','Convert'}
@@ -71,8 +102,15 @@ def calculate_scores(month, year):
     for name, ids in name_to_ids.items():
         if len(ids) > 1:
             kpi_counts = {aid: sum(len(by_emp_index.get(k,{}).get(aid,[])) for k in by_emp_index) for aid in ids}
-            # Keep: most KPI rows, prefer positive AdminID, prefer smaller ID (older = main account)
-            keep = max(ids, key=lambda a: (kpi_counts[a], a > 0, -abs(a)))
+            # Keep: ALWAYS prefer a real (positive) AdminID over a synthetic
+            # (negative) one, regardless of row count — a synthetic ID is a
+            # Keka-only employee not yet linked to SQL Server, and should
+            # never be allowed to "outvote" a real SQL Server identity just
+            # because it happens to have more attendance rows this month.
+            # Only when BOTH candidates are the same type does row count,
+            # then ID value, break the tie. Confirmed via
+            # trace_dedup_collision.py against real May 2026 data.
+            keep = max(ids, key=lambda a: (a > 0, kpi_counts[a], -abs(a)))
             for aid in ids:
                 if aid != keep:
                     print(f'[ScoreEngine] Dedup: drop AdminID={aid} ({employees[aid]["employee_name"]}) keep {keep}')
@@ -95,10 +133,12 @@ def calculate_scores(month, year):
         for kpi in active_kpis:
             kpi_key=kpi['key']; emp_rows=by_emp_index.get(kpi_key,{}).get(aid,[])
             agg=kpi_data[kpi_key]['instance'].aggregate(emp_rows)
-            # No ViaSocket row = employee had zero issues = 100% perfect for that KPI
+            # No data for this person in this KPI = fall back to a neutral
+            # "100% perfect" placeholder rather than showing blank, but use
+            # the current-month-aware working-days helper, not the stale
+            # full-calendar-month one.
             if agg['success_ratio'] is None and kpi_key in {'leaves','late_comings','early_leavings'}:
-                from viasocket import get_working_days as _gwd
-                wdays=_gwd(year,month)
+                wdays=_fallback_working_days(year,month)
                 agg={'numerator':wdays,'denominator':wdays,'success_ratio':100.0,
                      'orders':[{'working_days':wdays,'leave_days':0,'present_days':wdays,
                                 'late_days':0,'on_time_days':wdays,'early_days':0,
@@ -146,8 +186,7 @@ def get_employee_detail(admin_id, month, year):
                 result['department']=_nd(emp_rows[0].get('Department'))
             agg=inst.aggregate(emp_rows)
             if agg['success_ratio'] is None and kpi_key in {'leaves','late_comings','early_leavings'}:
-                from viasocket import get_working_days as _gwd
-                wdays=_gwd(year,month)
+                wdays=_fallback_working_days(year,month)
                 agg={'numerator':wdays,'denominator':wdays,'success_ratio':100.0,
                      'orders':[{'working_days':wdays,'leave_days':0,'present_days':wdays,
                                 'late_days':0,'on_time_days':wdays,'early_days':0,

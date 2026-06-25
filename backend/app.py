@@ -5,6 +5,7 @@ import threading
 import local_db
 import cache as score_cache
 import score_engine
+import keka_scheduler
 
 local_db.init_db()
 
@@ -21,6 +22,7 @@ CORS(app, supports_credentials=True,
                'http://localhost:3000','http://127.0.0.1:5000'])
 
 score_cache.start_scheduler()
+keka_scheduler.start_scheduler()
 _preview_tasks = {}
 _preview_lock  = threading.Lock()
 
@@ -249,6 +251,71 @@ def set_name_mapping():
     from name_mapper import set_manual_mapping
     set_manual_mapping(vs_name,int(admin_id),body.get('department'))
     return jsonify({'ok':True,'viasocket_name':vs_name,'admin_id':admin_id})
+
+
+# ── 1. Full monthly attendance data (cached) ───────────────────────────────────
+@app.route('/api/keka/attendance', methods=['GET'])
+def keka_attendance():
+    month = request.args.get('month', type=int)
+    year  = request.args.get('year', type=int)
+    department = request.args.get('department')
+ 
+    if not month or not year:
+        return jsonify({'error': 'month and year are required'}), 400
+ 
+    data = get_attendance_data(month, year)
+ 
+    if department and department.lower() != 'all':
+        data = {
+            **data,
+            'employees': [e for e in data['employees'] if e['department'] == department]
+        }
+ 
+    return jsonify(data)
+ 
+ 
+# ── 2. Single employee attendance (for employee detail page) ──────────────────
+@app.route('/api/keka/attendance/<keka_id>', methods=['GET'])
+def keka_employee_attendance(keka_id):
+    month = request.args.get('month', type=int)
+    year  = request.args.get('year', type=int)
+ 
+    if not month or not year:
+        return jsonify({'error': 'month and year are required'}), 400
+ 
+    record = get_employee_attendance(month, year, keka_id)
+    if record is None:
+        return jsonify({'error': 'employee not found for this month'}), 404
+ 
+    return jsonify(record)
+ 
+ 
+# ── 3. Active users headline number (for dashboard top card) ──────────────────
+@app.route('/api/keka/active-users', methods=['GET'])
+def keka_active_users():
+    month = request.args.get('month', type=int)
+    year  = request.args.get('year', type=int)
+ 
+    active, total = get_active_users_count(month, year)
+    return jsonify({'active': active, 'total': total})
+ 
+ 
+# ── 4. Force-refresh one month's cache (manual trigger / admin button) ────────
+@app.route('/api/keka/refresh', methods=['POST'])
+def keka_refresh():
+    month = request.json.get('month') if request.json else request.args.get('month', type=int)
+    year  = request.json.get('year') if request.json else request.args.get('year', type=int)
+ 
+    if not month or not year:
+        return jsonify({'error': 'month and year are required'}), 400
+ 
+    data = refresh_attendance_cache(month, year)
+    return jsonify({
+        'status': 'refreshed',
+        'month': month,
+        'year': year,
+        'employee_count': len(data['employees']),
+    })
 
 # ── DB Health ─────────────────────────────────────────────────────────────
 @app.get('/api/health/db')
