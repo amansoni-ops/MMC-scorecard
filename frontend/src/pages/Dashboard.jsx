@@ -233,13 +233,60 @@ function KPIDrillDown({ kpiKey, kpi, emp }) {
 
   if (kpiKey === 'late_comings') {
     const entries = o?.late_entries || []
+    // FIXED: punch_in/shift_start values from the backend are ALREADY in
+    // IST — confirmed against real Keka source data, which carries no
+    // timezone marker at all and is recorded directly in IST by the
+    // physical punch machine. The OLD version of this function treated
+    // these as UTC (via the 'UTC' suffix the backend used to send) and
+    // asked the browser to convert UTC->IST, which DOUBLE-SHIFTED an
+    // already-correct time forward by +5:30 (e.g. a real 2:47 PM punch
+    // displayed as 8:17 PM). The backend now sends an 'IST' suffix
+    // instead of 'UTC' — this function just extracts and formats the
+    // clock value directly, with NO timezone conversion at all.
     const toIST = (s) => {
       if (!s) return '—'
-      try {
-        return new Date(s.replace(' UTC', 'Z'))
-          .toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Kolkata' })
-      } catch { return s }
+      // Expected format: "2026-06-19 14:47:40 IST"
+      const match = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/.exec(s)
+      if (!match) return s
+      const hours = parseInt(match[4], 10)
+      const mins  = parseInt(match[5], 10)
+      const period = hours >= 12 ? 'pm' : 'am'
+      const displayH = hours % 12 === 0 ? 12 : hours % 12
+      return `${String(displayH).padStart(2,'0')}:${String(mins).padStart(2,'0')} ${period}`
     }
+    // DISPLAY-ONLY grace label: shift_start + 15 minutes, formatted the
+    // same way as every other time on this card. This is NOT the real
+    // backend grace threshold (which is 20 minutes) — it's purely a
+    // simplified figure shown to employees, per explicit request.
+    //
+    // FIXED: previously read entries[0].shift_start — but that only
+    // exists for employees who have at least one LATE arrival this month
+    // (late_entries is empty for everyone else, causing blank grace for
+    // most people), AND it's a full UTC datetime string, a different
+    // format from o.shift_start. Now reads o.shift_start instead — this
+    // is the person's own modal/typical shift start, present for EVERY
+    // employee regardless of late history, stored as a plain 'HH:MM'
+    // 24-hour string (e.g. "14:30"), NOT a UTC datetime string — parsed
+    // accordingly here rather than reusing the UTC-string parsing logic
+    // that caused garbled/wrong times before.
+    const graceLabel = (() => {
+      const shiftStartHHMM = o?.shift_start   // e.g. "14:30", always present per-person
+      if (!shiftStartHHMM || shiftStartHHMM === '--') return '—'
+      const match = /^(\d{1,2}):(\d{2})$/.exec(shiftStartHHMM)
+      if (!match) return '—'
+      const hours = parseInt(match[1], 10)
+      const mins  = parseInt(match[2], 10)
+      if (Number.isNaN(hours) || Number.isNaN(mins)) return '—'
+      // Build a plain Date in LOCAL time terms purely as a calculation
+      // aid for adding 15 minutes — no timezone conversion happens here
+      // since shift_start is already the IST clock time itself, not UTC.
+      const totalMins = (hours * 60 + mins + 15) % (24 * 60)
+      const graceH = Math.floor(totalMins / 60)
+      const graceM = totalMins % 60
+      const period = graceH >= 12 ? 'pm' : 'am'
+      const displayH = graceH % 12 === 0 ? 12 : graceH % 12
+      return `${String(displayH).padStart(2,'0')}:${String(graceM).padStart(2,'0')} ${period}`
+    })()
     return (
       <div className="px-6 py-3">
         <div className="flex gap-8 text-sm mb-3">
@@ -248,7 +295,7 @@ function KPIDrillDown({ kpiKey, kpi, emp }) {
           </span>
           <span style={{ color: '#10B981' }}>On-time: <b>{o?.on_time_days ?? '—'}</b></span>
           <span style={{ color: '#EF4444' }}>Late arrivals: <b>{o?.late_days ?? '—'}</b></span>
-          <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>Grace: 10:15 IST</span>
+          <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>Grace: {graceLabel} IST</span>
         </div>
         {entries.length > 0 ? (
           <table className="w-full text-xs">
@@ -264,9 +311,19 @@ function KPIDrillDown({ kpiKey, kpi, emp }) {
               {entries.map((e, i) => {
                 let delay = '—'
                 try {
+                  // FIXED: backend now sends "...IST" suffix instead of
+                  // "...UTC". Since we only need the DIFFERENCE between
+                  // punch_in and shift_start (both in the same IST frame),
+                  // the absolute timezone doesn't matter for this
+                  // subtraction — just need a format Date() parses
+                  // consistently for both. Replacing ' IST' with nothing
+                  // and letting Date() parse as a naive local datetime
+                  // works correctly here since both sides get the same
+                  // (irrelevant) local-timezone treatment, cancelling out
+                  // in the subtraction.
+                  const parseLocal = (s) => new Date((s || '').replace(' IST', ''))
                   const mins = Math.round(
-                    (new Date(e.punch_in?.replace(' UTC','Z')) -
-                     new Date(e.shift_start?.replace(' UTC','Z'))) / 60000
+                    (parseLocal(e.punch_in) - parseLocal(e.shift_start)) / 60000
                   )
                   if (mins > 0) delay = `+${mins} min`
                 } catch {}
@@ -807,9 +864,6 @@ export default function Dashboard() {
 
 // const TIER_COLOR = { A: '#10B981', B: '#F59E0B', C: '#EF4444' }
 
-// // ── Department config..... ──────────────────────────────────────────────────────
-// // Update Conversion array with all AdminIDs from Beyond Key.
-// // Add IT and Communication AdminIDs once received.
 // const DEPT_MAP = {
 //   Conversion: [
 //     17, 19, 107, 148, 172, 303, 304, 315, 322, 323, 331, 336, 338,
@@ -817,15 +871,14 @@ export default function Dashboard() {
 //     453, 454, 486, 489, 491, 493, 495, 507, 542, 544, 582, 856, 861,
 //     865, 868, 879, 908, 909,
 //   ],
-//   IT:            [],   // ← add AdminIDs from Beyond Key
-//   Communication: [],   // ← add AdminIDs from Beyond Key
+//   IT:            [],
+//   Communication: [],
 // }
 
 // const DEPT_KPI_KEYS = {
 //   All:           null,
 //   Conversion:    ['post_conversion', 'delayed_conversion', 'missing_status',
 //                   'leaves', 'late_comings', 'early_leavings', 'independence'],
-//   // All non-conversion depts: attendance KPIs only
 //   IT:            ['leaves', 'late_comings', 'early_leavings', 'independence'],
 //   Email:         ['leaves', 'late_comings', 'early_leavings', 'independence'],
 //   Account:       ['leaves', 'late_comings', 'early_leavings', 'independence'],
@@ -899,7 +952,6 @@ export default function Dashboard() {
 //   )
 // }
 
-// // ── Formula modal ──────────────────────────────────────────────────────────
 // function FormulaModal({ emp, onClose }) {
 //   if (!emp) return null
 //   const kpis = Object.entries(emp.kpi_breakdown || {})
@@ -973,7 +1025,6 @@ export default function Dashboard() {
 //   )
 // }
 
-// // ── KPI drill-down ─────────────────────────────────────────────────────────
 // function KPIDrillDown({ kpiKey, kpi, emp }) {
 //   const orders = kpi?.orders || []
 //   const o = orders[0]
@@ -984,7 +1035,6 @@ export default function Dashboard() {
 //     </div>
 //   )
 
-//   // ── Missing Status ────────────────────────────────────────────────────────
 //   if (kpiKey === 'missing_status') return (
 //     <div className="px-6 py-3 flex gap-8 text-sm">
 //       <span style={{ color: 'var(--text-muted)' }}>
@@ -997,7 +1047,6 @@ export default function Dashboard() {
 //     </div>
 //   )
 
-//   // ── Leaves ────────────────────────────────────────────────────────────────
 //   if (kpiKey === 'leaves') {
 //     const dates = o?.leave_dates || []
 //     return (
@@ -1028,7 +1077,6 @@ export default function Dashboard() {
 //     )
 //   }
 
-//   // ── Late Comings ──────────────────────────────────────────────────────────
 //   if (kpiKey === 'late_comings') {
 //     const entries = o?.late_entries || []
 //     const toIST = (s) => {
@@ -1038,6 +1086,33 @@ export default function Dashboard() {
 //           .toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Kolkata' })
 //       } catch { return s }
 //     }
+//     // DISPLAY-ONLY grace label: shift_start + 15 minutes, formatted the
+//     // same way as every other time on this card. This is NOT the real
+//     // backend grace threshold (which is 20 minutes) — it's purely a
+//     // simplified figure shown to employees, per explicit request.
+//     //
+//     // Reads o.shift_start (the person's modal/typical shift start,
+//     // PRESENT FOR EVERY EMPLOYEE regardless of late history) instead of
+//     // entries[0].shift_start (only exists for people who have at least
+//     // one late arrival — which was causing blank grace for everyone
+//     // with zero late days). o.shift_start is a plain "HH:MM" 24-hour
+//     // string (e.g. "10:30"), NOT a UTC datetime string, so it's parsed
+//     // differently here than the per-row punch times elsewhere on this card.
+//     const graceLabel = (() => {
+//       const shiftStartHHMM = o?.shift_start
+//       if (!shiftStartHHMM || shiftStartHHMM === '--') return '—'
+//       const match = /^(\d{1,2}):(\d{2})$/.exec(shiftStartHHMM)
+//       if (!match) return '—'
+//       const hours = parseInt(match[1], 10)
+//       const mins  = parseInt(match[2], 10)
+//       if (Number.isNaN(hours) || Number.isNaN(mins)) return '—'
+//       const totalMins = (hours * 60 + mins + 15) % (24 * 60)
+//       const graceH = Math.floor(totalMins / 60)
+//       const graceM = totalMins % 60
+//       const period = graceH >= 12 ? 'pm' : 'am'
+//       const displayH = graceH % 12 === 0 ? 12 : graceH % 12
+//       return `${String(displayH).padStart(2,'0')}:${String(graceM).padStart(2,'0')} ${period}`
+//     })()
 //     return (
 //       <div className="px-6 py-3">
 //         <div className="flex gap-8 text-sm mb-3">
@@ -1046,7 +1121,7 @@ export default function Dashboard() {
 //           </span>
 //           <span style={{ color: '#10B981' }}>On-time: <b>{o?.on_time_days ?? '—'}</b></span>
 //           <span style={{ color: '#EF4444' }}>Late arrivals: <b>{o?.late_days ?? '—'}</b></span>
-//           <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>Grace: 10:15 IST</span>
+//           <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>Grace: {graceLabel} IST</span>
 //         </div>
 //         {entries.length > 0 ? (
 //           <table className="w-full text-xs">
@@ -1090,7 +1165,6 @@ export default function Dashboard() {
 //     )
 //   }
 
-//   // ── Early Leavings ────────────────────────────────────────────────────────
 //   if (kpiKey === 'early_leavings') {
 //     const entries = o?.early_entries || []
 //     return (
@@ -1137,7 +1211,6 @@ export default function Dashboard() {
 //     )
 //   }
 
-//   // ── Independence ──────────────────────────────────────────────────────────
 //   if (kpiKey === 'independence') return (
 //     <div className="px-6 py-3 flex gap-8 text-sm">
 //       <span style={{ color: 'var(--text-muted)' }}>
@@ -1152,7 +1225,6 @@ export default function Dashboard() {
 //     </div>
 //   )
 
-//   // ── Post Conversion / Delayed Conversion (file tables) ────────────────────
 //   const isDelayed = kpiKey === 'delayed_conversion'
 //   return (
 //     <div className="px-6 py-3">
@@ -1212,7 +1284,6 @@ export default function Dashboard() {
 //   )
 // }
 
-// // ── Employee row ───────────────────────────────────────────────────────────
 // function EmpRow({ emp, rank, visibleKPIs, onClickName, onClickFormula }) {
 //   const [drill, setDrill] = useState(null)
 //   const tc = TIER_COLOR[emp.tier?.grade] ?? '#6366F1'
@@ -1241,12 +1312,10 @@ export default function Dashboard() {
 //         {visibleKPIs.map(k => {
 //           const kd       = emp.kpi_breakdown?.[k.key]
 //           const success  = kd?.success_ratio ?? null
-//           // Show FAILURE % — how many files/days HAD the problem
 //           const failPct  = success !== null ? +(100 - success).toFixed(1) : null
 //           const failCount= kd ? (kd.denominator ?? 0) - (kd.numerator ?? 0) : 0
 //           const denom    = kd?.denominator ?? 0
 //           const isOpen   = drill === k.key
-//           // Color: green = few problems, amber = moderate, red = many problems
 //           const barColor = failPct === null ? 'var(--border)'
 //             : failPct <= 5  ? '#10B981'
 //             : failPct <= 20 ? '#F59E0B'
@@ -1265,14 +1334,12 @@ export default function Dashboard() {
 //                       {failPct !== null ? `${failPct.toFixed(1)}%` : '—'}
 //                     </span>
 //                   </div>
-//                   {/* Count context: e.g. "3 issues / 38 files" */}
 //                   {denom > 0 && (
 //                     <p className="text-[10px] mt-0.5 tabular-nums" style={{ color: 'var(--text-faint)' }}>
 //                       {failCount} / {denom}
 //                     </p>
 //                   )}
 //                 </div>
-//                 {/* Only show chevron when there is actual data */}
 //                 {kd && kd.denominator > 0 && (
 //                   <button onClick={() => toggle(k.key)} title={`View ${k.name} details`}
 //                     className="p-0.5 rounded transition-colors shrink-0"
@@ -1311,7 +1378,6 @@ export default function Dashboard() {
 //   )
 // }
 
-// // ── Main Dashboard ─────────────────────────────────────────────────────────
 // export default function Dashboard() {
 //   const { setEmployees, setKPIs, kpis, employees } = useStore()
 //   const navigate = useNavigate()
@@ -1351,18 +1417,13 @@ export default function Dashboard() {
 //   }
 //   useEffect(() => { fetchData(month, year) }, [month, year])
 
-//   // Dept filter
 //   const deptEmployees = employees.filter(emp => {
 //     if (dept === 'All') return true
-//     // Conversion: use is_conversion flag from backend (most reliable)
 //     if (dept === 'Conversion') return !!emp.is_conversion
-//     // Other depts: match emp.department field set by backend from ViaSocket
-//     // Backend normalizes: IT Dept→IT, Email Team→Email, accounting→Account, etc.
 //     const empDept = (emp.department || '').trim()
 //     return empDept === dept
 //   })
 
-//   // Visible KPIs per dept
 //   const kpiKeyFilter = DEPT_KPI_KEYS[dept]
 //   const visibleKPIs  = kpis.filter(k =>
 //     k.is_active && (!kpiKeyFilter || kpiKeyFilter.includes(k.key))
@@ -1412,7 +1473,6 @@ export default function Dashboard() {
 
 //   return (
 //     <div className="space-y-5">
-//       {/* Controls */}
 //       <div className="flex items-center justify-between flex-wrap gap-3">
 //         <div className="flex items-center gap-2 flex-wrap">
 //           <select value={month} onChange={e=>setMonth(+e.target.value)} className="form-input">
@@ -1438,7 +1498,6 @@ export default function Dashboard() {
 //         </div>
 //       )}
 
-//       {/* Stat cards */}
 //       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
 //         <StatCard label="Active Employees" value={stats.total} sub={`${monthName(month)} ${year}`} color="indigo" icon={Users}/>
 //         <StatCard label="High Performers"  value={stats.A}     sub="Tier A ≥ 90"  color="green"  icon={Trophy}/>
@@ -1446,7 +1505,6 @@ export default function Dashboard() {
 //         <StatCard label="Team Avg Score"   value={fmtScore(stats.avg)} sub="out of 100" color="amber" icon={TrendingUp}/>
 //       </div>
 
-//       {/* Charts */}
 //       {deptEmployees.length > 0 && (
 //         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
 //           <div className="card p-5">
@@ -1496,8 +1554,9 @@ export default function Dashboard() {
 //         </div>
 //       )}
 
-//       {/* Employee table */}
-//       <div className="card overflow-hidden">
+//       {/* Employee table — FIXED: bounded height + internal scroll so the
+//           sticky header has an actual scrolling ancestor to attach to. */}
+//       <div className="card overflow-hidden flex flex-col" style={{ maxHeight: '80vh' }}>
 //         <div className="flex items-center justify-between px-5 py-3.5 border-b flex-wrap gap-3"
 //           style={{ borderColor:'var(--border)' }}>
 //           <div className="flex items-center gap-3 flex-wrap">
@@ -1508,9 +1567,7 @@ export default function Dashboard() {
 //                 {filtered.length}
 //               </span>
 //             </p>
-//             {/* Department dropdown */}
 //             <DeptDropdown value={dept} onChange={v => { setDept(v); setFilter('ALL') }}/>
-//             {/* Sort buttons */}
 //             <div className="flex items-center gap-1">
 //               <SortBtn val="name_asc"   label="A→Z"/>
 //               <SortBtn val="name_desc"  label="Z→A"/>
@@ -1555,8 +1612,10 @@ export default function Dashboard() {
 //           </div>
 //         )}
 
+//         {/* FIXED: overflow-auto (both axes) + flex-1 = actual scrolling
+//             ancestor for the sticky <thead> row to attach to. */}
 //         {!loading && filtered.length > 0 && (
-//           <div className="overflow-x-auto">
+//           <div className="overflow-auto flex-1">
 //             <table className="w-full">
 //               <thead>
 //                 <tr style={{ background:'var(--bg)', borderBottom:'1px solid var(--border)',
@@ -1586,7 +1645,6 @@ export default function Dashboard() {
 //           </div>
 //         )}
 
-//         {/* Dept info footer */}
 //         {dept !== 'All' && (
 //           <div className="px-5 py-3 border-t text-xs" style={{ borderColor:'var(--border)', color:'var(--text-faint)' }}>
 //             Showing {dept === 'Conversion' ? 'all KPIs' : 'attendance KPIs only'} for {dept} department.
@@ -1601,3 +1659,4 @@ export default function Dashboard() {
 //     </div>
 //   )
 // }
+
