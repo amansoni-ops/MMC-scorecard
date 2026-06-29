@@ -7,7 +7,7 @@ import './index.css'
 import './styles/theme.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename={import.meta.env.VITE_BASE_PATH || '/'}>
+  <BrowserRouter>
     <App />
     <Toaster position="top-right" toastOptions={{
       style: { background: '#1E293B', color: '#fff', border: '1px solid rgba(255,255,255,0.1)' },

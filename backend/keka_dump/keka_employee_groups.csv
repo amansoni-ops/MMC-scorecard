@@ -1,0 +1,287 @@
+rowid,autonumber,createdat,createdby,updatedat,updatedby,keka_id,dept_id,dept_title,group_type
+row13ivpin98,6,2026-06-18T05:13:03.622Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f131410e-74dc-4648-b594-83443ae10021,629d8266-aed7-4b66-80d9-86c77481e7d2,Admin Department,2
+rowsuoxueb1y,7,2026-06-18T05:13:06.509Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f26e1582-6c0a-40e3-a085-0108cb1c70aa,36beedcc-d192-4329-8d32-c20e40bf0888,Human Resources,2
+rowf75lf157p,8,2026-06-18T05:13:09.624Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6a875a23-9a52-4c76-b4a7-eaac75a22f46,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowotrssca1e,9,2026-06-18T05:13:12.762Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,06380524-742f-4169-b6ed-8ad5c87ed11b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowrztwy8p95,10,2026-06-18T05:13:15.674Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,0e8fa4c1-d04d-4484-a0e3-5e9a9a384757,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row6aaidgeu4,11,2026-06-18T05:13:19.570Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b2ca7e13-bc7d-4d60-bf8d-fa60b067b940,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowzf3hwxa0v,12,2026-06-18T05:13:21.862Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,88401aaa-0f30-46b7-ad51-eace859bdb9c,82327f78-409d-422c-9277-40b9918ec1eb,IT Department,2
+rowe0lpltlk9,13,2026-06-18T05:13:24.903Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,62177c61-4a97-4e98-843d-a7e7b1617161,067680b3-fbef-4af6-917f-2debc1df82ec,Receipt,2
+rowhm9os027c,14,2026-06-18T05:13:27.897Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,c9b58a0b-71d5-4f9f-ab44-536cf413a057,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowb0vcl4pze,15,2026-06-18T05:13:30.972Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,89fcd7b4-fc06-4806-9b37-a42a9f2fca2b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row2qjyc2h8d,16,2026-06-18T05:13:33.787Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,20cbb226-b78e-44c0-8e1d-63be800a3be1,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowb0j8b4e22,17,2026-06-18T05:13:36.798Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,10ec8902-9341-4151-9e4d-b054ac9d122e,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowxooj4orem,18,2026-06-18T05:13:39.872Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,1e5bff18-2372-4b75-9efb-1b284125ff5b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+roww4gqgm7lk,19,2026-06-18T05:13:42.878Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3c1a94d7-21a7-47bf-b9ed-4251099667e0,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row2c53lxd10,20,2026-06-18T05:13:45.896Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,7afc2b48-cffb-4aa4-a543-30fa7e4e2640,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+row48zmyka1m,21,2026-06-18T05:13:48.961Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,974192d8-e4f7-41e5-ab15-e86f56fc5189,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowqoej2az7x,22,2026-06-18T05:13:52.018Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,2dbe26e1-930e-4bb2-85e8-1fc4c506412c,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowtrk6au1yh,23,2026-06-18T05:13:55.036Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,56ef5f4b-3fe6-4932-a0d1-918c8d44983e,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowinwil3f8w,24,2026-06-18T05:13:58.063Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,5e5569fa-e5c3-4415-93b3-0ce52fe34c1e,7979a030-cb6f-4d95-9d19-58ccb0883d86,Email,2
+row2vk2ifyep,25,2026-06-18T05:14:01.091Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6ddf5bd9-5cd3-4f9e-8c61-f4001a15e21a,067680b3-fbef-4af6-917f-2debc1df82ec,Receipt,2
+rowwr5s8xdvr,26,2026-06-18T05:14:04.095Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,00abafad-7d38-4c54-937a-9dfb18b6694f,224f475d-091b-4f22-b1bc-d3b938fb06d4,MMC convert,2
+rowagw8d5ddl,27,2026-06-18T05:14:07.131Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,0c1d4647-1631-4d3d-9f87-96e4c771fe78,224f475d-091b-4f22-b1bc-d3b938fb06d4,MMC convert,2
+rowoqua6ltr1,28,2026-06-18T05:14:10.122Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,7f03b875-b979-4553-b2bd-52205c2adbb0,224f475d-091b-4f22-b1bc-d3b938fb06d4,MMC convert,2
+rown1gey7bs3,29,2026-06-18T05:14:13.183Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,e07373cd-b5e8-4ce8-8459-f26e550bfbe6,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowf1z8is4l4,30,2026-06-18T05:14:16.449Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,dbdba656-030c-4c8d-bfcc-0d94e325befb,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowwhm56pfp4,31,2026-06-18T05:14:19.285Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,10a3c7b9-a02a-4500-a513-3e6d1c074188,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowepy3yknm7,32,2026-06-18T05:14:22.313Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9cf23354-5042-4639-ab9e-be7ac3e760cc,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowdzv5sf35t,33,2026-06-18T05:14:25.319Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,bebb7aa4-93e4-4408-ae24-f89c4cbc4b06,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row01iz3r112,34,2026-06-18T05:14:28.482Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,7b0350e2-21ec-45ca-a7bc-539d4c9c829c,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row76lnnbyt4,35,2026-06-18T05:14:31.469Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,ad126374-bfc4-4342-9ba9-5e0aa4ee391d,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row3y5pspenc,36,2026-06-18T05:14:34.627Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,104d8378-1580-4bec-b66f-e5f5de62ef08,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowefsk68391,37,2026-06-18T05:14:37.504Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9da797c6-ad11-48b5-acc4-89341c984deb,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowvxivalvbe,38,2026-06-18T05:14:40.711Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,fb2894f2-b53f-4e0e-a527-e13cdd445f45,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowdqv8aimto,39,2026-06-18T05:14:43.466Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4cddba4c-b126-4bc3-9435-9a42d5ff6891,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowpz61xj4j9,40,2026-06-18T05:14:46.550Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b1788da0-8002-42cb-98ba-39a2db7cb5f5,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowtcxxlntya,41,2026-06-18T05:14:49.700Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,020eaac9-f343-4e64-94ce-6fe1ef1b31a7,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowjvs8f6o9s,42,2026-06-18T05:14:52.544Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,62759d33-6ffd-4954-a0ab-b0143befe3c4,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowpv7a3iddu,43,2026-06-18T05:14:55.851Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,e9f7c0e2-debe-4526-a88a-f2609c6fa46d,36beedcc-d192-4329-8d32-c20e40bf0888,Human Resources,2
+row3qrdmjgj6,44,2026-06-18T05:14:58.715Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,39be1905-4d8d-44a4-9901-b06dc592b809,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowyh7x7q3m0,45,2026-06-18T05:15:02.158Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,dc119b8f-fce9-4ef6-9b35-7a314d53edf0,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row50zjzkk1b,46,2026-06-18T05:15:05.117Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3afe59f3-30ad-429b-88b2-832a3e8eabba,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+roweb1eb2ph5,47,2026-06-18T05:16:51.448Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,22da8fa9-b8f0-467c-8dc8-8ddd31de84fc,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowvcmk6g6vt,48,2026-06-18T05:16:51.963Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,2d0bbfc1-fe80-44f6-a494-0ea256b84ad7,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowe7ldx74ks,49,2026-06-18T05:16:52.703Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,e80d1ec6-1236-422d-b2b0-68457e0e05a9,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowm7x2wtlor,50,2026-06-18T05:16:53.447Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,fa59cbe7-6309-43a9-bc10-6b2c5cc951e9,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowayoznqvp0,51,2026-06-18T05:16:54.153Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,e3dba1c0-3ae1-4919-9398-0faa97557b12,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowclncexcj8,52,2026-06-18T05:16:54.195Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,e9b46ba3-8b63-4e06-8945-106362bb9b65,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowxzn4b6pc2,53,2026-06-18T05:16:55.647Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9481b11a-c15e-4638-9047-9b9685d15b17,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowo8vb0cxzu,54,2026-06-18T05:16:55.721Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a4cdf9d6-f3e8-413a-a3c7-370e49827a1e,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowwu9gm6lrq,55,2026-06-18T05:16:55.994Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f460e2f4-b58b-4d46-b3d8-8adb571563ed,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowi2yld9qp9,56,2026-06-18T05:16:56.509Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,25765acf-bb49-4ed1-9f6f-2418951dfe84,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+roweiei2hjzj,57,2026-06-18T05:16:56.798Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,92c1967f-75b9-43c4-ac89-19a00145d4c6,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row6l88iw4fo,58,2026-06-18T05:16:56.866Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,994270a5-59eb-4742-9b38-ba54c2ab69ae,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+rowon8uvjij5,59,2026-06-18T05:16:57.495Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,91d776ce-88ab-406d-b862-b831f75c1076,c530af23-f641-4b03-bb14-bbb3b6854890,E-mail Team,2
+rowwobwm3dj0,60,2026-06-18T05:16:57.973Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a9c828f5-7861-472b-bace-0e1c8896f63b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowvfvnof6ny,61,2026-06-18T05:16:58.097Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f03f12fd-648f-4748-ba0d-fe111484d3d2,36beedcc-d192-4329-8d32-c20e40bf0888,Human Resources,2
+rowb15k4osl9,62,2026-06-18T05:16:58.241Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4ad00720-2e5f-4b49-a98f-98d18033a499,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowq5jyjja7v,63,2026-06-18T05:16:58.295Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,850fb008-93c7-4f35-8301-e88c992d5592,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowhn6532vg4,64,2026-06-18T05:16:58.842Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b6917f64-40ba-4435-9930-badb673e068f,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowcc9fcmd8n,65,2026-06-18T05:16:58.991Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,791f9b23-68e5-4d70-ba11-437fd4ecdd3d,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowkqy3ic7oa,66,2026-06-18T05:16:59.793Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,8fa5fe64-b304-4b9c-9f26-a4376dedae1c,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowasmoeuljh,67,2026-06-18T05:17:00.101Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,eda8ef1d-5f9d-431a-8331-4d2b94dcd486,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+rowbr97mucii,68,2026-06-18T05:17:00.195Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,14c93c3e-9c7a-4f85-a4e1-16011deddd74,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowohg3uexuf,69,2026-06-18T05:17:00.202Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,432e7af2-928d-4698-bf02-d5b6639868d5,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row4prarm5ne,70,2026-06-18T05:17:00.589Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,ba648063-8894-4c14-83a5-b1e98153b514,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowog3451ew4,71,2026-06-18T05:17:00.886Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,2eea4304-03e1-462d-a1b5-c14e68d62640,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowmdpdvo2oq,72,2026-06-18T05:17:01.692Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,7ba8e476-4af1-4f2c-b458-5d28dbe240cb,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+row44vwzmvqe,73,2026-06-18T05:17:02.303Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,8c069606-39da-44fe-9b26-1d3e080906df,d47ef17f-0d6b-4e80-8eab-ed24dfe81b5d,operator,2
+rowg1jg27lkr,74,2026-06-18T05:17:02.486Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,e19417d6-e534-4ae2-bc28-dbbcd3db54f4,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+rowp0vkyl65y,75,2026-06-18T05:17:02.703Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3f4e9eea-39ae-41c8-bf41-a6c11cfe34ad,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowjtaeg50sl,76,2026-06-18T05:17:02.758Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,c1148f3c-86d0-4049-ac7c-9c00c618748b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowcjjgj6nt1,77,2026-06-18T05:17:02.883Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9c5178ac-56ed-4736-b7d1-0f784dc40227,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row7iwesnwrp,78,2026-06-18T05:17:02.892Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,1279587c-3d0b-4896-8bea-28a71b12272b,82327f78-409d-422c-9277-40b9918ec1eb,IT Department,2
+rowp2fegwkgg,79,2026-06-18T05:17:03.030Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6d540bca-90ff-43a3-a428-581a15c66903,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowefu22zkht,80,2026-06-18T05:17:03.286Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,dbe957ea-b4cd-4b9e-832d-380380b9d85b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowaa9df55w5,81,2026-06-18T05:17:03.621Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,45383ecc-0a87-4009-962d-44408f2c3742,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+row3ovf3pu2l,82,2026-06-18T05:17:03.757Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,2c0bf625-be6a-4b89-936f-1dd917c5b0f8,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+row9rlzyqxv2,83,2026-06-18T05:17:04.001Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,38dadfea-4929-47a6-a1dc-280c39df777e,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row965k0rifh,84,2026-06-18T05:17:04.330Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,8cd30343-5b76-4a00-8a61-f686947de030,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row1prve8pm9,85,2026-06-18T05:17:04.562Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,2046c59f-b6cd-408a-889f-c74fc606d225,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowqcbi0ixlp,86,2026-06-18T05:17:06.042Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,ab15a741-813d-41ec-b01e-3b8c673d89fc,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row4hcpshodm,87,2026-06-18T05:17:08.969Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,494271c8-204e-4273-a090-f7daa5b1e33e,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowf7es1yj6v,88,2026-06-18T05:17:11.958Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,89389c8e-2714-4c08-96a0-22fa079dc221,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowwgela40e0,89,2026-06-18T05:17:15.029Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,5830d54b-0819-410a-b9b5-a9902127d016,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row2a1ejtstf,90,2026-06-18T05:17:18.047Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,d7a87248-94fe-466d-aa33-5cf2c90f48c2,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row3s7dkguzo,91,2026-06-18T05:17:21.096Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,0c2aae2a-831c-45d2-beec-456885c0b586,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowl0o7l5aql,92,2026-06-18T05:17:24.102Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,e946887e-1adf-45bf-8dfc-59687fa57b69,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+rowrsrvzhmnr,93,2026-06-18T05:17:27.166Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6ca10bb5-3000-471c-8b0c-c564d51bd38c,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row234a3q1kx,94,2026-06-18T05:17:30.158Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,70d2d433-21d9-4e7a-9df2-e749ca5c8e55,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowr2xh07sgo,95,2026-06-18T05:17:33.251Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f9a0eee5-6e92-4144-9b4a-9d0a923ae21e,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowpqb9jtus0,96,2026-06-18T05:17:36.320Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,1aba0c38-2d88-48d4-82a2-f53f080da857,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+row6q3wpjshr,97,2026-06-18T05:17:39.229Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3b45df67-7db0-4508-878c-14a817dc496f,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowi3fszid2s,98,2026-06-18T05:17:42.364Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f33b8daa-4ad8-4ca5-8e73-10bc48f6bbf2,19f81af3-c735-4f27-aa0d-92efb7ad08ab,Information technology,2
+rowf2nd0ba7t,99,2026-06-18T05:17:45.312Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4f96028c-bc90-4a0c-bdc2-2fd423720595,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row0cxk1xxks,100,2026-06-18T05:17:48.305Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,37255dbc-3024-4e90-aaf9-0a82597b7326,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowu17ltdofz,101,2026-06-18T05:17:51.413Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,c92f82ff-1d7b-49a0-9311-80b409ffb9cc,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+rowmsjq0y5dw,102,2026-06-18T05:17:54.363Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,0e1adad5-98ed-4f5d-b2bd-13ba84302235,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+rowhg5d5adhh,103,2026-06-18T05:17:57.469Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,38d86395-105f-454e-81d9-83abc8736bc1,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowy322laevi,104,2026-06-18T05:18:00.640Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,d2d0dc86-408f-4f87-b0a9-18d7f9a74e2a,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+rowo2jedskdw,105,2026-06-18T05:18:03.695Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,28dc3544-a248-4e73-aabf-e1a04f63ee5f,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row6cl26gccc,106,2026-06-18T05:18:06.500Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,fd6a17b8-3a52-4eab-a3d2-43eec0c132bf,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+rowf95yz2q40,107,2026-06-18T05:18:09.663Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,ac10bbd8-11bb-4e61-8961-bad0b741aa11,224f475d-091b-4f22-b1bc-d3b938fb06d4,MMC convert,2
+rowg9sso3fcz,108,2026-06-18T05:18:12.700Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,09631b29-c371-42db-8cf9-b91ab228f058,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowzl453vita,109,2026-06-18T05:18:15.563Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,ab8c4764-c7e6-46a1-b567-d4300fe96ac1,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+row23prup3bu,110,2026-06-18T05:18:18.597Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,117b2aad-4289-40f4-8be7-7e6444d4b13a,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row19zu89uas,111,2026-06-18T05:18:21.638Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f158027c-608e-4942-80c7-af62c4879dac,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowjycxgd28l,112,2026-06-18T05:18:24.819Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,67683def-a943-4f5e-878c-a18c1cff3df1,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowhcyzibraf,113,2026-06-18T05:18:27.790Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b7bd7ce9-bfb3-427c-964b-f4708294a364,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowbxlpt442e,114,2026-06-18T05:18:30.725Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f834ab1c-343b-44a9-8af6-5e225ff1a9c2,3032185b-d360-430a-be31-10bc54a513e1,Coordinator,2
+row9r1sdfaxs,115,2026-06-18T05:18:33.757Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,cf464445-ac1b-49fe-882e-8ff17376e8ed,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowwuzhg3cgu,116,2026-06-18T05:18:36.847Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b17ecdbc-7770-439d-811e-487fea2d591f,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowpoe29kju7,117,2026-06-18T05:18:39.879Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,bd23d5bf-920f-4fbc-aa9f-f5cb4e8f26a7,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+row4poguvg61,118,2026-06-18T05:18:42.999Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,5ec03334-9e43-40ac-ae23-ae5b9df4de2f,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row7c8f3vgr8,119,2026-06-18T05:18:45.901Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,db83a19b-b03a-49dd-9b74-c02aea31633b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row9num4qx7p,120,2026-06-18T05:18:48.944Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,088b90ff-a006-403c-9d70-7b821a351aa6,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowxsil1ui46,121,2026-06-18T05:18:52.054Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,59cdf4af-4a4a-41cd-92d0-309e5d734378,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowik8q984yu,122,2026-06-18T05:18:55.016Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,36f4fc0f-50d9-4bf9-91cc-7ac2eb3da4fd,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row9auhrgq8q,123,2026-06-18T05:18:58.056Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,bc0f6e01-53e8-45d3-963e-debafdc95ea6,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowe56gu8zdx,124,2026-06-18T05:19:01.132Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9f679f7f-2431-4333-b03b-4aa261c07b40,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row0n83w10mm,125,2026-06-18T05:19:04.079Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9a67aab0-1095-4fc6-b0c3-615e91506fa5,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowppl8t6kae,126,2026-06-18T05:19:07.195Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,842a5a4a-cc6f-4d5e-b2da-3d4ece98b7c7,132ced23-2a7d-4793-8708-10c51b47d95f,MMC VA,2
+rowkauzonuxk,127,2026-06-18T05:19:10.090Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,862783bf-d2ab-42bb-95d2-9d66800973bf,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+rownu4sknkgl,128,2026-06-18T05:19:13.257Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3b7b14f6-b493-40d8-8039-5f987fde4204,629d8266-aed7-4b66-80d9-86c77481e7d2,Admin Department,2
+rowtkvha8jh5,129,2026-06-18T05:19:16.605Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b3c2109d-d9b8-4d5f-99be-7f1149e6bc2c,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row7unpvc837,130,2026-06-18T05:19:19.276Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,908d5dbf-0ca7-4e4d-a132-30e85b794ea5,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row10agnxc2e,131,2026-06-18T05:19:22.259Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,84826ef7-c9c1-4f29-bc28-e0f76f5cd41a,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowxj3qna0t9,132,2026-06-18T05:19:25.431Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,cc562f9b-bf31-491f-a3ee-cc649a64e2a5,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowv99t3t9nf,133,2026-06-18T05:19:28.386Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9a53fe10-31dd-4bdb-b717-b4a35acc90a1,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowd973mrkqj,134,2026-06-18T05:19:31.315Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b7d8d74d-f975-4a98-9fdb-5f849c24e690,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowjy2mtezvz,135,2026-06-18T05:19:34.630Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,095eb92d-97a4-4249-81e2-139d3c737076,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row9ju0sk1x0,136,2026-06-18T05:19:37.399Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a35ae488-362f-4934-bcb9-abef96de3c51,161dc951-f340-4205-a6f6-3ce7a5748cc4,Marketing,2
+row2oro3tf9w,137,2026-06-18T05:19:40.515Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,7fc3e02a-e88d-4af2-aaff-36971e5e6590,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowxa78z6qtb,138,2026-06-18T05:19:43.558Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,d70a9462-c3f5-40b0-bde8-312eb0cd3605,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row3wts9yuzo,139,2026-06-18T05:19:46.567Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,22d4b197-fd9d-4428-82a5-f38ccc809750,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowxycd6csaz,140,2026-06-18T05:19:49.607Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,cd80899a-c9f2-4607-99f8-0e0259ad6b9a,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowonivwnr3n,141,2026-06-18T05:19:52.684Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,2786cda0-ac17-42e7-a6e2-4f7d4454374a,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowky2604mhm,142,2026-06-18T05:19:55.619Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a5d58881-743b-432f-a4e7-3527d40003b6,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowbakjjyf13,143,2026-06-18T05:19:58.587Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,c22fb75e-81be-4dac-8d13-119abf131274,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row0rh2t4w4r,144,2026-06-18T05:20:01.703Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,5a56a347-1345-4cb7-92e6-fc5239dcd15b,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowyqbth82ld,145,2026-06-18T05:21:29.149Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,31c547d4-2f91-46d7-a979-116da39122fd,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowzld1hdim2,146,2026-06-18T05:21:36.232Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,61eb41c9-e7a0-484b-ade6-984aded8ec9e,36beedcc-d192-4329-8d32-c20e40bf0888,Human Resources,2
+rowoq76sfff2,147,2026-06-18T05:21:36.750Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,5353d217-cb34-4255-a980-56542c1a7026,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row628kwjhht,148,2026-06-18T05:21:37.880Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,edbfa096-ab1c-45bd-86cf-28f598c272ed,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowwxd3020m1,149,2026-06-18T05:21:38.122Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,8194c2d6-b2f9-4a85-abd4-bbdfb92589c8,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowuq19df2iz,150,2026-06-18T05:21:39.679Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,87072876-5d85-41d3-b7cb-f3f26315f46e,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row8pl632t11,151,2026-06-18T05:21:40.095Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,bfe5ab45-f770-40d9-959b-d688b4550717,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row6y9dmk0kn,152,2026-06-18T05:21:40.255Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b6e54abe-bf81-4c3e-a458-b4badf2ec5fd,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row0xoazogsg,153,2026-06-18T05:21:40.390Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,1161b8b0-c04b-47bc-881b-f4339f68c6f8,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowom0sufnn0,154,2026-06-18T05:21:40.586Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,7e540661-f0fd-4480-9446-ad704c202e6a,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowf9f6ftekz,155,2026-06-18T05:21:40.772Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a0e20bb3-9f50-481f-8e28-1ab9386c8ef3,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowmwaxr1sy8,156,2026-06-18T05:21:41.306Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9ac60236-4dfa-4c90-857b-25be48a8f458,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row7iofu94c1,157,2026-06-18T05:21:41.583Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f6bd87c9-af3c-4c7e-b411-7c1bc72895ad,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowy3n1a0yy6,158,2026-06-18T05:21:42.186Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,2da68876-0ef4-4463-91e9-b6d6400763a1,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row3vp6mgnj2,159,2026-06-18T05:21:42.489Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,c0d1ad86-1620-4753-8dbe-4ed9ba4ecb12,161dc951-f340-4205-a6f6-3ce7a5748cc4,Marketing,2
+rowckttk80m7,160,2026-06-18T05:21:42.493Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,8c671740-ffcc-46b2-a207-f6b834135728,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowyend8if6y,161,2026-06-18T05:21:42.804Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,84a7d79e-d0a6-4b0b-bc37-46bc84864f09,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+row2o7z36jus,162,2026-06-18T05:21:42.806Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,1c9b2424-db06-4eca-b405-08f6eb834d33,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowc8etoko08,163,2026-06-18T05:21:43.182Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,0cf4593e-ddcc-488f-a384-e84ef912c7f8,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowoon1wrpfh,164,2026-06-18T05:21:43.692Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,98c5bea6-42ee-40ff-b880-bdae5b7f111c,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowr6udboe9q,165,2026-06-18T05:21:43.890Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,af5594a7-e375-441f-b233-8d2d4599fa1d,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row0kx5wtlqm,166,2026-06-18T05:21:44.080Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,eba66fb1-835c-4f92-ab79-b56cee174034,161dc951-f340-4205-a6f6-3ce7a5748cc4,Marketing,2
+row12uyajhk4,167,2026-06-18T05:21:44.448Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,af419384-1b41-4d74-99e3-6649c96673bd,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowlwxdxp0ye,168,2026-06-18T05:21:44.884Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,58c79f6f-a4e0-4b9a-9f81-abde63d55a20,629d8266-aed7-4b66-80d9-86c77481e7d2,Admin Department,2
+rowub931tv1k,169,2026-06-18T05:21:45.292Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,749563fa-ba5d-4b93-8d02-bf2d93793d9d,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowh2xmcy7vs,170,2026-06-18T05:21:45.402Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b93ea5b5-02a9-458a-a736-8bc38c3a7a32,c530af23-f641-4b03-bb14-bbb3b6854890,E-mail Team,2
+roww47ww7zjv,171,2026-06-18T05:21:45.405Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,e8d96d63-9095-420a-8e2c-179fd976a292,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowtjylfder1,172,2026-06-18T05:21:45.512Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f337c270-af0d-489a-8662-e414ce95674b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row0nudhjlvp,173,2026-06-18T05:21:46.123Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,c81c695a-f492-47f6-bc4a-a5baa34c898b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row3mv3r67gj,174,2026-06-18T05:21:46.187Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f6332867-4619-47cb-8218-9ceb64c11207,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowmgcw4b3mv,175,2026-06-18T05:21:46.669Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9b36129e-2b42-4006-9911-800a96a3f0b4,7979a030-cb6f-4d95-9d19-58ccb0883d86,Email,2
+row16xix0fvr,176,2026-06-18T05:21:46.695Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,04b12da5-4814-407d-840d-c9f6a5b4c21b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row4lc70j2v4,177,2026-06-18T05:21:47.420Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,0cf3306c-419b-4625-a369-300be0c895e3,c530af23-f641-4b03-bb14-bbb3b6854890,E-mail Team,2
+rowvazga1nzu,178,2026-06-18T05:21:47.551Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,7635b493-7423-459d-a7ed-37de81c90910,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+row614fc9xos,179,2026-06-18T05:21:47.872Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,8a68183d-84d9-4731-9cfb-9354be1e448f,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowixyivbwhg,180,2026-06-18T05:21:50.908Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,d8be94fb-8cef-4c30-a303-50716e670b51,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowa8dcpr7sv,181,2026-06-18T05:21:53.990Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,bc8e2cbb-20cf-4997-877c-9adb383b6683,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowqhm69ymxg,182,2026-06-18T05:21:57.139Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,63a94e8a-4335-4a9c-891c-f5ed73fd7f39,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowemkb9y2tr,183,2026-06-18T05:22:00.269Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3fe6bf04-1b50-4560-8bc5-af3d90e4657b,d23c2f4a-27bf-4ef3-acd9-4e1f812dca94,Account,2
+rowc4a3xjwqx,184,2026-06-18T05:22:29.413Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,2c84748c-d174-4fe7-b002-47a8a8ddf375,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowgetto9ll7,185,2026-06-18T05:22:31.948Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,afe8c10b-9180-49d6-8c5f-009f6a749d74,d47ef17f-0d6b-4e80-8eab-ed24dfe81b5d,operator,2
+rowufgrvefoz,186,2026-06-18T05:22:32.485Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,d99822c3-68d2-455b-8fbe-ddd4771651eb,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+row8zuwpu4bi,187,2026-06-18T05:22:32.673Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4d8b0c76-bc09-4726-b12e-a2d1d331d81c,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+row3jkdnnmvj,188,2026-06-18T05:22:34.170Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f9d71c8b-bcb4-4731-9ee1-e02839c734ee,86db3360-71ab-4428-b79f-0d364cfef8c0,accounting,2
+rowt51dhm0vy,189,2026-06-18T05:22:35.222Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,474672b8-9ceb-47cc-a019-e5df6df6c149,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowe6y7p3gew,190,2026-06-18T05:22:35.463Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,ae40fd5a-cd09-41c7-b2db-aa7a7f267f91,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowvb5xpln19,191,2026-06-18T05:22:35.915Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,36f468d6-5207-4d65-ad38-069649c53a09,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowgqh0qynln,192,2026-06-18T05:22:36.182Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,d927d048-8137-440b-af37-72e8ac4cd5a4,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowa122xjpq3,193,2026-06-18T05:22:36.913Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,89aae315-8408-4203-b4d8-336a7a0c713b,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+row7nf8t0k16,194,2026-06-18T05:22:36.971Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3ea4c1e1-5ba3-48bb-826c-4af693f801ac,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowfn0tvi4re,195,2026-06-18T05:22:38.918Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,799ab167-5fda-4773-bccf-0996dac96c09,86db3360-71ab-4428-b79f-0d364cfef8c0,accounting,2
+roww64kj0rej,196,2026-06-18T05:22:39.471Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4382a171-b2c0-4f05-9dff-99c2abed1429,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowopiyi2f6t,197,2026-06-18T05:22:42.694Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,cb892024-8e76-45bb-9369-d065da3de78c,86db3360-71ab-4428-b79f-0d364cfef8c0,accounting,2
+rowt1v54xy1u,198,2026-06-18T05:22:45.704Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,460b32a2-d2ba-453c-85ac-66e04a52f648,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowzeirh2ram,199,2026-06-18T05:22:48.953Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,01aeb9fe-2b1f-4307-bb2e-72cf745b0c1c,55d9f49c-4fa6-4464-8be7-2f176f99c886,E-mail communication,2
+rowxmuj29knu,200,2026-06-18T05:22:51.913Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3aba318b-ba74-4478-8d37-66e2a7d11fda,629d8266-aed7-4b66-80d9-86c77481e7d2,Admin Department,2
+rowjnb8yrt6o,201,2026-06-18T05:22:54.923Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4c211c28-b7b0-418e-9bc4-ff5f95b9f360,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+row53p70tr4k,202,2026-06-18T05:22:57.915Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,5d467b61-f71a-4e08-952a-523f74274bcc,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowh1higsps0,203,2026-06-18T05:23:00.971Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,87ca3104-d314-4e28-b0c9-6654ce36fc3a,d23c2f4a-27bf-4ef3-acd9-4e1f812dca94,Account,2
+row5mnwmwkwj,204,2026-06-18T05:23:04.940Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,5d6f56ff-986d-4023-9292-63e9eeb2ccce,d23c2f4a-27bf-4ef3-acd9-4e1f812dca94,Account,2
+rowg7xd3nuct,205,2026-06-18T05:23:06.913Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6ddf7127-d01f-4471-9709-b90860fd1716,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowrxsyqa3kj,206,2026-06-18T05:23:10.178Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,d9741b12-7d4c-4646-b9c7-d544dcaf77ff,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row3cswkyrdq,207,2026-06-18T05:23:12.915Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,bc422776-1493-4e42-a5ff-48c942184783,36beedcc-d192-4329-8d32-c20e40bf0888,Human Resources,2
+rowez6dzkwrs,208,2026-06-18T05:23:15.913Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,58f1b0ee-0f19-4974-878e-2b688326d775,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowrp3u7717y,209,2026-06-18T05:23:19.174Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,61ebd9bb-8be4-4b43-af98-52292d8c6102,629d8266-aed7-4b66-80d9-86c77481e7d2,Admin Department,2
+rowbujl5rjrg,210,2026-06-18T05:23:22.174Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,df463b26-518f-435c-bb93-48ad82ec8aab,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowk6qto7x8a,211,2026-06-18T05:23:25.203Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b82c4917-7019-4661-a2cb-d3e5f5468c88,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row91ccynbak,212,2026-06-18T05:23:27.943Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3dcca89f-f86a-450f-a508-232ba693c4ab,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowumzbcorqh,213,2026-06-18T05:23:30.979Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b32df0b0-1cf1-4e98-8446-e74820cea3cc,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row1cvx9knj0,214,2026-06-18T05:23:34.446Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,2bd98099-6907-4835-bb77-e5389acfd08f,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowoear6oqva,215,2026-06-18T05:23:37.228Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,fd3428aa-f78b-484b-8552-1eb703ad77c6,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row31qwpbpts,216,2026-06-18T05:23:39.914Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3769c1d2-b240-4dc0-ae2b-8cce7a30bebe,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowvoaq9ob1j,217,2026-06-18T05:23:43.221Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,3b251f41-b240-4cf9-8758-259ae4ce11c7,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowdoq22mvtt,218,2026-06-18T05:23:46.202Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,8dd3b595-b1eb-483f-afae-e5dc13e50e2b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row3kqqda12e,219,2026-06-18T05:23:49.666Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,17e9b0b3-4a2c-48e3-8822-e49873a44a3c,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row74qagoh30,220,2026-06-18T05:23:52.450Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,74a60997-73bf-405f-9164-878c46c0dfbd,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row0o1azo98d,221,2026-06-18T05:23:55.231Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,fe8a4643-76ef-42ed-8b49-42a540e7ee77,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowasjo3hmtb,222,2026-06-18T05:23:58.452Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,21466850-31b7-4074-90f2-e0ec8f6bcb2d,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row3kp60b143,223,2026-06-18T05:24:01.161Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,59fb17ba-1a9b-43fd-a0fb-c9d2d57e2642,d9c87eb7-8d0c-4794-bd02-965b2a19f274,Client communication,2
+rowtc1qeemre,224,2026-06-18T05:24:04.697Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b76fca43-9ca0-4791-940d-35a78ef3d5ba,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rownqcghvoaj,225,2026-06-18T05:24:07.664Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b506c1f9-1538-412d-b0fb-04d7a1135b44,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowmm65r3yc9,226,2026-06-18T05:24:10.698Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,9766cc07-2ac9-4b84-95af-2c88895de4d4,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowhims1h1s3,227,2026-06-18T05:24:13.468Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6ff091e3-a5cb-4372-8207-83cc0fdc1be3,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowdsvjz8lmm,228,2026-06-18T05:24:16.751Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,07473dd8-2cc6-4b0d-bdb3-0fddb6c76926,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowh8c8l3zw2,229,2026-06-18T05:24:21.244Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f4488f9b-d950-4615-998a-7469bea232be,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowfnrehazdu,230,2026-06-18T05:24:22.711Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,1e979721-143b-4b85-9987-0fb9fcb80d38,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowy2ywcwg7s,231,2026-06-18T05:24:25.696Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f9f1c66d-c0f5-4a7b-bf07-7d8250aa8fbd,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row2u5opwbsf,232,2026-06-18T05:24:28.942Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,912340fb-7010-497a-8899-0adfd83eee82,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row6x2vkxtqo,233,2026-06-18T05:24:31.916Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,20762b5b-cf59-410b-946b-206cd3116f52,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowtkb98xag0,234,2026-06-18T05:24:34.913Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a7ea0969-f39a-48ce-ab07-db537c5309e7,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowvl4ajz4z6,235,2026-06-18T05:24:37.914Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4ee8e198-86f4-4b5c-a9ad-f7439f7f504b,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowrg6zqmgl5,236,2026-06-18T05:24:40.930Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,cc874578-97a2-4df0-b9ef-b983eeb2fe05,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rows4eynr6os,237,2026-06-18T05:24:44.206Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,47725285-bd58-412b-88a5-58a6c7fba906,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowddxtk04wd,238,2026-06-18T05:24:46.703Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,fcc767f2-7eee-4b12-bbf3-d936c6959f28,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row5miidzulf,239,2026-06-18T05:24:49.950Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,bf09597d-da1d-4b78-be3e-392a6b60917b,36beedcc-d192-4329-8d32-c20e40bf0888,Human Resources,2
+rowahvrge5jb,240,2026-06-18T05:24:52.913Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,747200bc-88d7-44bd-9916-2a629878e508,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+rowuh1lz57ss,241,2026-06-18T05:24:55.940Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6db7c8db-bb42-4f3c-a957-8a77b4829ebb,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowcksatxgcv,242,2026-06-18T05:24:59.175Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b28e17e1-ed33-4b2e-809f-4afe025051a3,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowxkzr37c9e,243,2026-06-18T05:25:02.172Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6fe62f23-6ede-4844-9d84-732fddc4734c,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowgc8kccuq2,244,2026-06-18T05:26:43.174Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,8232b6b6-7191-46cb-b8d0-ea167bd1198f,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowtn8qqxfxl,245,2026-06-18T05:26:43.920Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,61f92803-2ebe-4ab4-9030-2c029deac8b7,55d9f49c-4fa6-4464-8be7-2f176f99c886,E-mail communication,2
+rowku8zgixqy,246,2026-06-18T05:26:44.182Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,d693bae3-78cf-4cad-b720-c050f7d1e7fd,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row2srtdajwr,247,2026-06-18T05:26:44.663Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,941b7adb-d80b-4444-bc1e-3c52da0b96fa,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+row28lkd4p1v,248,2026-06-18T05:26:45.206Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,c478035e-5e3d-46b3-80ba-2964b05fa196,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowbznoqo7ni,249,2026-06-18T05:26:45.749Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,bb7d5a80-234f-4e9e-8051-ec576bed86b8,55d9f49c-4fa6-4464-8be7-2f176f99c886,E-mail communication,2
+rowy4xhp9a9p,250,2026-06-18T05:26:45.971Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,5180303b-f44f-40f5-b32d-d9b5856ec70c,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row6l2eosfhi,251,2026-06-18T05:26:46.459Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,cdf9da89-0d78-4908-abf7-b46bb646db91,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row3isqfo0m2,252,2026-06-18T05:26:46.705Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,ca162d6b-0c49-4841-b07b-b7605026b1a2,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rowtve3lilnl,253,2026-06-18T05:26:46.921Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,790f5c54-ca5e-42e1-b87d-26fc0a94ef14,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+row7v4mc7hqb,254,2026-06-18T05:26:48.179Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,79355861-6d2b-42ce-9f7a-640f0ede1645,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowst49noqrk,255,2026-06-18T05:26:48.450Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4bd00ea3-434c-4489-9670-4fd4268c9b41,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+row6huuj66sz,256,2026-06-18T05:26:48.700Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,86daf0e9-1f41-4cbc-a97e-781dc4dc561a,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowiu0brsiux,257,2026-06-18T05:26:49.179Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,35ec01ff-5abb-47f0-8e2d-2697bc03165d,d23c2f4a-27bf-4ef3-acd9-4e1f812dca94,Account,2
+rowo4lmbgyc7,258,2026-06-18T05:26:49.442Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,cb67f82a-30f8-41bb-ad8a-25c0c8028afc,d23c2f4a-27bf-4ef3-acd9-4e1f812dca94,Account,2
+row2y5rkg1ob,259,2026-06-18T05:26:49.746Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4fa4f502-0776-463e-85e4-366b417e061c,15057f50-716c-43ad-899c-1093d2acb649,Indore,3
+rows9x9w4y91,260,2026-06-18T05:26:50.212Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,d3ae5fc8-1720-4a90-b975-c5565ea260cc,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+rowkxbs6fovd,261,2026-06-18T05:26:50.427Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,beb333b6-1c24-4ea0-abdd-be219636d150,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowscma0nlzy,262,2026-06-18T05:26:50.915Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,38dac0d2-42b6-4c51-b22a-64d66166d557,86db3360-71ab-4428-b79f-0d364cfef8c0,accounting,2
+rowo4tejlduu,263,2026-06-18T05:26:50.952Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,7fbeef04-0cae-4d21-bf22-1fd6e3cbeb71,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowzmj2y60pr,264,2026-06-18T05:26:51.913Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6b017b0d-5217-47a6-9534-8f86f4842816,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowqync6c0gf,265,2026-06-18T05:26:51.917Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a69f29bb-0a28-459c-b62e-59835d0bbceb,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+row513q07xuf,266,2026-06-18T05:26:52.162Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,aebf0714-dc00-475f-b250-a73805b58a8a,96519485-ddaf-4142-9dab-eed904739a12,"Conversion, Book keeping",2
+rowqm00yymjo,267,2026-06-18T05:26:52.662Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,138b0bdf-8b25-4a36-b3e4-8a72528c59fd,c93d14f9-e691-46a2-a0aa-2122b6caf261,Book keeping,2
+rowjp88o672y,268,2026-06-18T05:26:52.912Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,79573676-d585-4cfb-a191-32a4d950d7f9,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+rowy94oevpjn,269,2026-06-18T05:26:53.183Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4d3eb37a-0339-4976-b028-6d9a9479e8ea,c93d14f9-e691-46a2-a0aa-2122b6caf261,Book keeping,2
+row9fx0u71vp,270,2026-06-18T05:26:53.455Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,673a7e71-f152-46b9-bbf4-bef4482633a8,16133bbb-a2f8-4124-aea3-15f1f04673fd,Email Team,2
+row3fvtsbyv5,271,2026-06-18T05:26:53.536Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,558e92c3-92fd-447a-9743-3933df656f05,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+rowguzpfamvf,272,2026-06-18T05:26:53.661Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4bb3a33f-6f0d-474a-b3ba-d62f607c8e42,c93d14f9-e691-46a2-a0aa-2122b6caf261,Book keeping,2
+rowglbkxfohw,273,2026-06-18T05:26:53.664Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,987b3e8d-00fd-4476-a9e5-9e6434b4b34c,cea4c401-3214-43e5-b18d-6557ab8e3d3f,currently NAV,2
+rows805zlm1w,274,2026-06-18T05:26:53.967Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a92dd988-0adb-4c61-bd34-d3f08d149148,6c4db4b4-d4d9-4835-a3c0-4ed151d8d52f,Conversation,2
+row7d2ogz2xd,275,2026-06-18T05:26:54.415Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,4b32da3f-b5d5-4c1b-bd44-a9b014cda8e1,6c4db4b4-d4d9-4835-a3c0-4ed151d8d52f,Conversation,2
+row65o73l32i,276,2026-06-18T05:26:54.910Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,74745174-19a7-4f83-bdae-5ead553a9ca5,4d6bf64e-ad90-4c1a-8fcf-fa5bbc20c7eb,Sales,2
+rowbn7uwmyub,277,2026-06-18T05:26:54.918Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a1c4a43b-8e81-4195-805f-517fcff4ab68,d23c2f4a-27bf-4ef3-acd9-4e1f812dca94,Account,2
+rowtyo9ws63c,278,2026-06-18T05:26:54.919Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,bf83aa07-e76f-4df6-bcd5-ee428eb811f6,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+rowmr834d135,279,2026-06-18T05:26:56.173Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,6452be88-5926-4952-976d-589e1971e971,c93d14f9-e691-46a2-a0aa-2122b6caf261,Book keeping,2
+rowof0rpjwvh,280,2026-06-18T05:26:56.199Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,a7bbf2a0-ae35-4d43-99c8-84e0b21402b3,b2a1d515-6002-4dae-81fc-2efb92b2a45b,MMC Bookkeeping,2
+row3wjyvmooy,281,2026-06-18T05:26:57.656Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b1d99645-8442-403d-b60c-d41f26eac92e,156f5553-5eca-4a76-be82-495d453a3d5f,IT,2
+row5p3mpw3jj,282,2026-06-18T05:27:00.835Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,ccdd43ee-c50c-4479-a2ec-d1fe1779b023,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+rowa7vn6798e,283,2026-06-18T05:27:03.447Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,03d2bb1f-f363-4c8b-8cf5-809473027760,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+row4jclmywgp,284,2026-06-18T05:27:06.449Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,eb75f9df-8671-4deb-acb8-19cc39e5c636,c93d14f9-e691-46a2-a0aa-2122b6caf261,Book keeping,2
+rowe1tmuu5j4,285,2026-06-18T05:27:09.413Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f781f468-e0d0-45eb-806d-28abd15b7662,c93d14f9-e691-46a2-a0aa-2122b6caf261,Book keeping,2
+rowcs19wdnov,286,2026-06-18T05:27:12.444Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b03a3efa-bcb0-4dda-bede-a567b0832938,86db3360-71ab-4428-b79f-0d364cfef8c0,accounting,2
+row7whhh2gug,287,2026-06-18T05:27:15.709Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,b8d6928d-d919-4c7d-ad8e-d5d58918fb1c,2085e2c9-c235-454f-aea1-8e6fb776b688,Bookkeeping,2
+rowti7axzjpq,288,2026-06-18T05:27:18.223Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,50ed521f-70b2-4226-802e-8272da0df301,f537ce69-fdfc-4e35-b41e-277d82293c23,MMC Books,2
+rowx2yqo4dx6,289,2026-06-18T05:27:21.662Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,f1ab4e5e-a146-411e-bbb6-8bc485395d54,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowntd2bjiax,290,2026-06-18T05:27:24.663Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,326a1ee3-4e09-4696-9d02-8cf19ddcec4c,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2
+rowi8fhk1eym,291,2026-06-18T05:27:27.474Z,"{""id"": ""SocketKey_21295_id4cvu""}",,,fd35c77b-a018-44d4-96e3-2cb302a05b4e,2c07cc0d-fbec-4762-9c10-9b0763a23c3a,Conversion,2

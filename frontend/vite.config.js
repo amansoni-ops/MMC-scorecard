@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   plugins: [react()],
-  base: mode === 'production' ? '/mmc/' : '/',
   server: {
     port: 5173,
     proxy: {
@@ -11,8 +10,8 @@ export default defineConfig(({ mode }) => ({
         target: 'http://127.0.0.1:5000',
         changeOrigin: false,
         secure: false,
-        timeout: 300000,
-        proxyTimeout: 300000,
+        timeout: 300000,       // 5 min — SQL queries can take time
+        proxyTimeout: 300000,  // 5 min proxy-to-flask timeout
         configure: (proxy) => {
           proxy.on('error', (err) => {
             console.log('[Vite Proxy Error]', err.message)
@@ -27,4 +26,4 @@ export default defineConfig(({ mode }) => ({
       }
     }
   }
-}))
+})
