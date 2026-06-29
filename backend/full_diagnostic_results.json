@@ -1,0 +1,2290 @@
+[
+  {
+    "keka_id": "f131410e-74dc-4648-b594-83443ae10021",
+    "keka_name": "Arjun Bhadoriya",
+    "norm": "arjun bhadoriya",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "f26e1582-6c0a-40e3-a085-0108cb1c70aa",
+    "keka_name": "Rashmi Rajput",
+    "norm": "rashmi rajput",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "6a875a23-9a52-4c76-b4a7-eaac75a22f46",
+    "keka_name": "Mohit singh tomar",
+    "norm": "mohit singh tomar",
+    "verdict": "EXACT",
+    "matched_admin_id": 946,
+    "matched_admin_name": "Mohit Singh  Tomar"
+  },
+  {
+    "keka_id": "06380524-742f-4169-b6ed-8ad5c87ed11b",
+    "keka_name": "Shivam lodhi",
+    "norm": "shivam lodhi",
+    "verdict": "EXACT",
+    "matched_admin_id": 940,
+    "matched_admin_name": "Shivam Lodhi"
+  },
+  {
+    "keka_id": "0e8fa4c1-d04d-4484-a0e3-5e9a9a384757",
+    "keka_name": "Lakhan kori",
+    "norm": "lakhan kori",
+    "verdict": "EXACT",
+    "matched_admin_id": 947,
+    "matched_admin_name": "Lakhan  Kori"
+  },
+  {
+    "keka_id": "b2ca7e13-bc7d-4d60-bf8d-fa60b067b940",
+    "keka_name": "Prachi Sharma",
+    "norm": "prachi sharma",
+    "verdict": "EXACT",
+    "matched_admin_id": 337,
+    "matched_admin_name": "Prachi  Sharma"
+  },
+  {
+    "keka_id": "88401aaa-0f30-46b7-ad51-eace859bdb9c",
+    "keka_name": "Rituraj Bhargava",
+    "norm": "rituraj bhargava",
+    "verdict": "EXACT",
+    "matched_admin_id": 419,
+    "matched_admin_name": "Rituraj Bhargava"
+  },
+  {
+    "keka_id": "62177c61-4a97-4e98-843d-a7e7b1617161",
+    "keka_name": "Suraj Devkota",
+    "norm": "suraj devkota",
+    "verdict": "EXACT",
+    "matched_admin_id": 43,
+    "matched_admin_name": "Suraj DevKota"
+  },
+  {
+    "keka_id": "c9b58a0b-71d5-4f9f-ab44-536cf413a057",
+    "keka_name": "Ritik Hiwade",
+    "norm": "ritik hiwade",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "89fcd7b4-fc06-4806-9b37-a42a9f2fca2b",
+    "keka_name": "Tanushree Panwar",
+    "norm": "tanushree panwar",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "20cbb226-b78e-44c0-8e1d-63be800a3be1",
+    "keka_name": "Kalyani Kharate",
+    "norm": "kalyani kharate",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "10ec8902-9341-4151-9e4d-b054ac9d122e",
+    "keka_name": "Vidhi Jain",
+    "norm": "vidhi jain",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "1e5bff18-2372-4b75-9efb-1b284125ff5b",
+    "keka_name": "Nandan Nayak",
+    "norm": "nandan nayak",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "3c1a94d7-21a7-47bf-b9ed-4251099667e0",
+    "keka_name": "Ayushi Modi",
+    "norm": "ayushi modi",
+    "verdict": "EXACT",
+    "matched_admin_id": 346,
+    "matched_admin_name": "Ayushi Modi"
+  },
+  {
+    "keka_id": "7afc2b48-cffb-4aa4-a543-30fa7e4e2640",
+    "keka_name": "Ayush Khillari",
+    "norm": "ayush khillari",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "974192d8-e4f7-41e5-ab15-e86f56fc5189",
+    "keka_name": "Kumkum Bhise",
+    "norm": "kumkum bhise",
+    "verdict": "EXACT",
+    "matched_admin_id": 345,
+    "matched_admin_name": "Kumkum Bhise"
+  },
+  {
+    "keka_id": "2dbe26e1-930e-4bb2-85e8-1fc4c506412c",
+    "keka_name": "Rajkumari Gurjar",
+    "norm": "rajkumari gurjar",
+    "verdict": "EXACT",
+    "matched_admin_id": 421,
+    "matched_admin_name": "Rajkumari Gurjar"
+  },
+  {
+    "keka_id": "56ef5f4b-3fe6-4932-a0d1-918c8d44983e",
+    "keka_name": "Abhishek Gour",
+    "norm": "abhishek gour",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "5e5569fa-e5c3-4415-93b3-0ce52fe34c1e",
+    "keka_name": "Vanshika Das",
+    "norm": "vanshika das",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "6ddf5bd9-5cd3-4f9e-8c61-f4001a15e21a",
+    "keka_name": "Riya Khandelwal",
+    "norm": "riya khandelwal",
+    "verdict": "EXACT",
+    "matched_admin_id": 57,
+    "matched_admin_name": "Riya Khandelwal"
+  },
+  {
+    "keka_id": "00abafad-7d38-4c54-937a-9dfb18b6694f",
+    "keka_name": "Sunny Singh",
+    "norm": "sunny singh",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "0c1d4647-1631-4d3d-9f87-96e4c771fe78",
+    "keka_name": "Ankit Mishra",
+    "norm": "ankit mishra",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "7f03b875-b979-4553-b2bd-52205c2adbb0",
+    "keka_name": "Apeksha Jain",
+    "norm": "apeksha jain",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "e07373cd-b5e8-4ce8-8459-f26e550bfbe6",
+    "keka_name": "Ekta Hirke",
+    "norm": "ekta hirke",
+    "verdict": "EXACT",
+    "matched_admin_id": 344,
+    "matched_admin_name": "Ekta Hirke"
+  },
+  {
+    "keka_id": "dbdba656-030c-4c8d-bfcc-0d94e325befb",
+    "keka_name": "Arpan Choudhary",
+    "norm": "arpan choudhary",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "10a3c7b9-a02a-4500-a513-3e6d1c074188",
+    "keka_name": "Aayushi Homkar",
+    "norm": "aayushi homkar",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "9cf23354-5042-4639-ab9e-be7ac3e760cc",
+    "keka_name": "Sanjay Chourasiya",
+    "norm": "sanjay chourasiya",
+    "verdict": "EXACT",
+    "matched_admin_id": 416,
+    "matched_admin_name": "Sanjay Chourasiya"
+  },
+  {
+    "keka_id": "bebb7aa4-93e4-4408-ae24-f89c4cbc4b06",
+    "keka_name": "Rajat Mehra",
+    "norm": "rajat mehra",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "7b0350e2-21ec-45ca-a7bc-539d4c9c829c",
+    "keka_name": "Aayush Patidar",
+    "norm": "aayush patidar",
+    "verdict": "FUZZY_0.96",
+    "matched_admin_id": 395,
+    "matched_admin_name": "Ayush Patidar"
+  },
+  {
+    "keka_id": "ad126374-bfc4-4342-9ba9-5e0aa4ee391d",
+    "keka_name": "Priyanshu Kochale",
+    "norm": "priyanshu kochale",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "104d8378-1580-4bec-b66f-e5f5de62ef08",
+    "keka_name": "Satyam Solanki",
+    "norm": "satyam solanki",
+    "verdict": "EXACT",
+    "matched_admin_id": 340,
+    "matched_admin_name": "Satyam Solanki"
+  },
+  {
+    "keka_id": "9da797c6-ad11-48b5-acc4-89341c984deb",
+    "keka_name": "Sumit Singh Solanki",
+    "norm": "sumit singh solanki",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "fb2894f2-b53f-4e0e-a527-e13cdd445f45",
+    "keka_name": "Shashank Pandey",
+    "norm": "shashank pandey",
+    "verdict": "EXACT",
+    "matched_admin_id": 339,
+    "matched_admin_name": "Shashank Pandey"
+  },
+  {
+    "keka_id": "4cddba4c-b126-4bc3-9435-9a42d5ff6891",
+    "keka_name": "Mahima Pardeshi",
+    "norm": "mahima pardeshi",
+    "verdict": "EXACT",
+    "matched_admin_id": 370,
+    "matched_admin_name": "Mahima  Pardeshi"
+  },
+  {
+    "keka_id": "b1788da0-8002-42cb-98ba-39a2db7cb5f5",
+    "keka_name": "Pranjal Chourasiya",
+    "norm": "pranjal chourasiya",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "020eaac9-f343-4e64-94ce-6fe1ef1b31a7",
+    "keka_name": "Bhavishy Rajak",
+    "norm": "bhavishy rajak",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "62759d33-6ffd-4954-a0ab-b0143befe3c4",
+    "keka_name": "Dewang Vani",
+    "norm": "dewang vani",
+    "verdict": "EXACT",
+    "matched_admin_id": 371,
+    "matched_admin_name": "Dewang vani"
+  },
+  {
+    "keka_id": "e9f7c0e2-debe-4526-a88a-f2609c6fa46d",
+    "keka_name": "Aastha Gupta",
+    "norm": "aastha gupta",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "39be1905-4d8d-44a4-9901-b06dc592b809",
+    "keka_name": "Roshani Panchore",
+    "norm": "roshani panchore",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "dc119b8f-fce9-4ef6-9b35-7a314d53edf0",
+    "keka_name": "Nikita Gurjar",
+    "norm": "nikita gurjar",
+    "verdict": "EXACT",
+    "matched_admin_id": 319,
+    "matched_admin_name": "Nikita  Gurjar"
+  },
+  {
+    "keka_id": "3afe59f3-30ad-429b-88b2-832a3e8eabba",
+    "keka_name": "Ruchi Bhatkariyea",
+    "norm": "ruchi bhatkariyea",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "22da8fa9-b8f0-467c-8dc8-8ddd31de84fc",
+    "keka_name": "Anita Patel",
+    "norm": "anita patel",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "2d0bbfc1-fe80-44f6-a494-0ea256b84ad7",
+    "keka_name": "Disha Bhange",
+    "norm": "disha bhange",
+    "verdict": "EXACT",
+    "matched_admin_id": 400,
+    "matched_admin_name": "Disha  Bhange"
+  },
+  {
+    "keka_id": "e80d1ec6-1236-422d-b2b0-68457e0e05a9",
+    "keka_name": "Sakshi Jatav",
+    "norm": "sakshi jatav",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "fa59cbe7-6309-43a9-bc10-6b2c5cc951e9",
+    "keka_name": "Pragya Mangal",
+    "norm": "pragya mangal",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "e9b46ba3-8b63-4e06-8945-106362bb9b65",
+    "keka_name": "Arun Chouhan",
+    "norm": "arun chouhan",
+    "verdict": "EXACT",
+    "matched_admin_id": 348,
+    "matched_admin_name": "Arun Chouhan"
+  },
+  {
+    "keka_id": "e3dba1c0-3ae1-4919-9398-0faa97557b12",
+    "keka_name": "Yash Purohit",
+    "norm": "yash purohit",
+    "verdict": "EXACT",
+    "matched_admin_id": 403,
+    "matched_admin_name": "Yash Purohit"
+  },
+  {
+    "keka_id": "9481b11a-c15e-4638-9047-9b9685d15b17",
+    "keka_name": "Priya Pandey",
+    "norm": "priya pandey",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "a4cdf9d6-f3e8-413a-a3c7-370e49827a1e",
+    "keka_name": "Rudra Tiwari",
+    "norm": "rudra tiwari",
+    "verdict": "EXACT",
+    "matched_admin_id": 333,
+    "matched_admin_name": "Rudra  Tiwari"
+  },
+  {
+    "keka_id": "f460e2f4-b58b-4d46-b3d8-8adb571563ed",
+    "keka_name": "Shubhangi Prakash Sarwey",
+    "norm": "shubhangi prakash sarwey",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "25765acf-bb49-4ed1-9f6f-2418951dfe84",
+    "keka_name": "SAHIL SAWLANI",
+    "norm": "sahil sawlani",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "92c1967f-75b9-43c4-ac89-19a00145d4c6",
+    "keka_name": "Deepak Kumar Namdeo",
+    "norm": "deepak kumar namdeo",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "994270a5-59eb-4742-9b38-ba54c2ab69ae",
+    "keka_name": "Sakshi Mirg",
+    "norm": "sakshi mirg",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "91d776ce-88ab-406d-b862-b831f75c1076",
+    "keka_name": "Uday Tomar",
+    "norm": "uday tomar",
+    "verdict": "EXACT",
+    "matched_admin_id": 412,
+    "matched_admin_name": "Uday Tomar"
+  },
+  {
+    "keka_id": "f03f12fd-648f-4748-ba0d-fe111484d3d2",
+    "keka_name": "Bhumika Mulani",
+    "norm": "bhumika mulani",
+    "verdict": "EXACT",
+    "matched_admin_id": 399,
+    "matched_admin_name": "Bhumika Mulani"
+  },
+  {
+    "keka_id": "4ad00720-2e5f-4b49-a98f-98d18033a499",
+    "keka_name": "Kapil Solanki",
+    "norm": "kapil solanki",
+    "verdict": "EXACT",
+    "matched_admin_id": 367,
+    "matched_admin_name": "Kapil Solanki"
+  },
+  {
+    "keka_id": "a9c828f5-7861-472b-bace-0e1c8896f63b",
+    "keka_name": "Mahak Shrivastava",
+    "norm": "mahak shrivastava",
+    "verdict": "EXACT",
+    "matched_admin_id": 408,
+    "matched_admin_name": "Mahak  Shrivastava"
+  },
+  {
+    "keka_id": "850fb008-93c7-4f35-8301-e88c992d5592",
+    "keka_name": "Deepak Mishra",
+    "norm": "deepak mishra",
+    "verdict": "EXACT",
+    "matched_admin_id": 389,
+    "matched_admin_name": "Deepak Mishra "
+  },
+  {
+    "keka_id": "b6917f64-40ba-4435-9930-badb673e068f",
+    "keka_name": "Sarthak Dak",
+    "norm": "sarthak dak",
+    "verdict": "EXACT",
+    "matched_admin_id": 91,
+    "matched_admin_name": "Sarthak Dak"
+  },
+  {
+    "keka_id": "791f9b23-68e5-4d70-ba11-437fd4ecdd3d",
+    "keka_name": "Faizal Raza",
+    "norm": "faizal raza",
+    "verdict": "EXACT",
+    "matched_admin_id": 402,
+    "matched_admin_name": "Faizal  Raza"
+  },
+  {
+    "keka_id": "8fa5fe64-b304-4b9c-9f26-a4376dedae1c",
+    "keka_name": "Aanchal Mali",
+    "norm": "aanchal mali",
+    "verdict": "EXACT",
+    "matched_admin_id": 396,
+    "matched_admin_name": "Aanchal  Mali"
+  },
+  {
+    "keka_id": "eda8ef1d-5f9d-431a-8331-4d2b94dcd486",
+    "keka_name": "Rohit Rane",
+    "norm": "rohit rane",
+    "verdict": "EXACT",
+    "matched_admin_id": 394,
+    "matched_admin_name": "Rohit Rane"
+  },
+  {
+    "keka_id": "14c93c3e-9c7a-4f85-a4e1-16011deddd74",
+    "keka_name": "Mahima Parwal",
+    "norm": "mahima parwal",
+    "verdict": "EXACT",
+    "matched_admin_id": 418,
+    "matched_admin_name": "Mahima Parwal"
+  },
+  {
+    "keka_id": "432e7af2-928d-4698-bf02-d5b6639868d5",
+    "keka_name": "Disha Vani",
+    "norm": "disha vani",
+    "verdict": "EXACT",
+    "matched_admin_id": 401,
+    "matched_admin_name": "Disha  Vani"
+  },
+  {
+    "keka_id": "ba648063-8894-4c14-83a5-b1e98153b514",
+    "keka_name": "Shanu Mehta",
+    "norm": "shanu mehta",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "2eea4304-03e1-462d-a1b5-c14e68d62640",
+    "keka_name": "Parag Khandelwal",
+    "norm": "parag khandelwal",
+    "verdict": "EXACT",
+    "matched_admin_id": 420,
+    "matched_admin_name": "Parag  Khandelwal "
+  },
+  {
+    "keka_id": "7ba8e476-4af1-4f2c-b458-5d28dbe240cb",
+    "keka_name": "Khushi Yadav",
+    "norm": "khushi yadav",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "8c069606-39da-44fe-9b26-1d3e080906df",
+    "keka_name": "Yash Lokhande",
+    "norm": "yash lokhande",
+    "verdict": "EXACT",
+    "matched_admin_id": 405,
+    "matched_admin_name": "Yash Lokhande"
+  },
+  {
+    "keka_id": "1279587c-3d0b-4896-8bea-28a71b12272b",
+    "keka_name": "Aman Gupta",
+    "norm": "aman gupta",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "3f4e9eea-39ae-41c8-bf41-a6c11cfe34ad",
+    "keka_name": "Yash Parmar",
+    "norm": "yash parmar",
+    "verdict": "EXACT",
+    "matched_admin_id": 390,
+    "matched_admin_name": "Yash Parmar "
+  },
+  {
+    "keka_id": "c1148f3c-86d0-4049-ac7c-9c00c618748b",
+    "keka_name": "Sarita Jaiswal",
+    "norm": "sarita jaiswal",
+    "verdict": "EXACT",
+    "matched_admin_id": 415,
+    "matched_admin_name": "Sarita Jaiswal"
+  },
+  {
+    "keka_id": "e19417d6-e534-4ae2-bc28-dbbcd3db54f4",
+    "keka_name": "Shalini Rathore",
+    "norm": "shalini rathore",
+    "verdict": "CLOSE_BUT_BELOW_THRESHOLD_0.87",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "9c5178ac-56ed-4736-b7d1-0f784dc40227",
+    "keka_name": "Falguni Patidar",
+    "norm": "falguni patidar",
+    "verdict": "EXACT",
+    "matched_admin_id": 404,
+    "matched_admin_name": "Falguni  Patidar"
+  },
+  {
+    "keka_id": "6d540bca-90ff-43a3-a428-581a15c66903",
+    "keka_name": "Mansi Sharma",
+    "norm": "mansi sharma",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "dbe957ea-b4cd-4b9e-832d-380380b9d85b",
+    "keka_name": "Aarti Panwar",
+    "norm": "aarti panwar",
+    "verdict": "EXACT",
+    "matched_admin_id": 397,
+    "matched_admin_name": "Aarti  Panwar"
+  },
+  {
+    "keka_id": "45383ecc-0a87-4009-962d-44408f2c3742",
+    "keka_name": "Harshita Thakur",
+    "norm": "harshita thakur",
+    "verdict": "EXACT",
+    "matched_admin_id": 438,
+    "matched_admin_name": "Harshita  Thakur"
+  },
+  {
+    "keka_id": "2c0bf625-be6a-4b89-936f-1dd917c5b0f8",
+    "keka_name": "Rashmi Yadav",
+    "norm": "rashmi yadav",
+    "verdict": "EXACT",
+    "matched_admin_id": 436,
+    "matched_admin_name": "Rashmi Yadav"
+  },
+  {
+    "keka_id": "38dadfea-4929-47a6-a1dc-280c39df777e",
+    "keka_name": "Deepika Pandey",
+    "norm": "deepika pandey",
+    "verdict": "EXACT",
+    "matched_admin_id": 428,
+    "matched_admin_name": "Deepika  Pandey"
+  },
+  {
+    "keka_id": "8cd30343-5b76-4a00-8a61-f686947de030",
+    "keka_name": "Deepak Parmar",
+    "norm": "deepak parmar",
+    "verdict": "CLOSE_BUT_BELOW_THRESHOLD_0.88",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "2046c59f-b6cd-408a-889f-c74fc606d225",
+    "keka_name": "Shital Sharma",
+    "norm": "shital sharma",
+    "verdict": "EXACT",
+    "matched_admin_id": 422,
+    "matched_admin_name": "Shital Sharma"
+  },
+  {
+    "keka_id": "ab15a741-813d-41ec-b01e-3b8c673d89fc",
+    "keka_name": "Sagar Narsinghani",
+    "norm": "sagar narsinghani",
+    "verdict": "EXACT",
+    "matched_admin_id": 427,
+    "matched_admin_name": "Sagar Narsinghani "
+  },
+  {
+    "keka_id": "494271c8-204e-4273-a090-f7daa5b1e33e",
+    "keka_name": "Nandini Rayak",
+    "norm": "nandini rayak",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "89389c8e-2714-4c08-96a0-22fa079dc221",
+    "keka_name": "Neharika Yadav",
+    "norm": "neharika yadav",
+    "verdict": "FUZZY_0.93",
+    "matched_admin_id": 432,
+    "matched_admin_name": "Niharika Yadav"
+  },
+  {
+    "keka_id": "5830d54b-0819-410a-b9b5-a9902127d016",
+    "keka_name": "Nandini Nigam",
+    "norm": "nandini nigam",
+    "verdict": "EXACT",
+    "matched_admin_id": 424,
+    "matched_admin_name": "Nandini Nigam"
+  },
+  {
+    "keka_id": "d7a87248-94fe-466d-aa33-5cf2c90f48c2",
+    "keka_name": "Nikita Malviya",
+    "norm": "nikita malviya",
+    "verdict": "EXACT",
+    "matched_admin_id": 423,
+    "matched_admin_name": "Nikita Malviya"
+  },
+  {
+    "keka_id": "0c2aae2a-831c-45d2-beec-456885c0b586",
+    "keka_name": "Avani Jhinjoria",
+    "norm": "avani jhinjoria",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "e946887e-1adf-45bf-8dfc-59687fa57b69",
+    "keka_name": "Sanskriti Pathak",
+    "norm": "sanskriti pathak",
+    "verdict": "EXACT",
+    "matched_admin_id": 437,
+    "matched_admin_name": "Sanskriti Pathak"
+  },
+  {
+    "keka_id": "6ca10bb5-3000-471c-8b0c-c564d51bd38c",
+    "keka_name": "Pragati Gupta",
+    "norm": "pragati gupta",
+    "verdict": "EXACT",
+    "matched_admin_id": 433,
+    "matched_admin_name": "Pragati  Gupta"
+  },
+  {
+    "keka_id": "70d2d433-21d9-4e7a-9df2-e749ca5c8e55",
+    "keka_name": "Sanchita Gupta",
+    "norm": "sanchita gupta",
+    "verdict": "EXACT",
+    "matched_admin_id": 434,
+    "matched_admin_name": "Sanchita  Gupta"
+  },
+  {
+    "keka_id": "f9a0eee5-6e92-4144-9b4a-9d0a923ae21e",
+    "keka_name": "Shradha Patidar",
+    "norm": "shradha patidar",
+    "verdict": "EXACT",
+    "matched_admin_id": 440,
+    "matched_admin_name": "Shradha Patidar"
+  },
+  {
+    "keka_id": "1aba0c38-2d88-48d4-82a2-f53f080da857",
+    "keka_name": "Aastha Sadhwani",
+    "norm": "aastha sadhwani",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "3b45df67-7db0-4508-878c-14a817dc496f",
+    "keka_name": "Radhika Maheshwari",
+    "norm": "radhika maheshwari",
+    "verdict": "EXACT",
+    "matched_admin_id": 435,
+    "matched_admin_name": "Radhika  Maheshwari"
+  },
+  {
+    "keka_id": "f33b8daa-4ad8-4ca5-8e73-10bc48f6bbf2",
+    "keka_name": "Dhruv Yadav",
+    "norm": "dhruv yadav",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "4f96028c-bc90-4a0c-bdc2-2fd423720595",
+    "keka_name": "Teena Jain",
+    "norm": "teena jain",
+    "verdict": "EXACT",
+    "matched_admin_id": 441,
+    "matched_admin_name": "Teena  Jain"
+  },
+  {
+    "keka_id": "37255dbc-3024-4e90-aaf9-0a82597b7326",
+    "keka_name": "Anchal Kayast",
+    "norm": "anchal kayast",
+    "verdict": "EXACT",
+    "matched_admin_id": 442,
+    "matched_admin_name": "Anchal Kayast"
+  },
+  {
+    "keka_id": "c92f82ff-1d7b-49a0-9311-80b409ffb9cc",
+    "keka_name": "Shivam Wani",
+    "norm": "shivam wani",
+    "verdict": "EXACT",
+    "matched_admin_id": 443,
+    "matched_admin_name": "Shivam  Wani"
+  },
+  {
+    "keka_id": "0e1adad5-98ed-4f5d-b2bd-13ba84302235",
+    "keka_name": "Lokesh Patidar",
+    "norm": "lokesh patidar",
+    "verdict": "EXACT",
+    "matched_admin_id": 444,
+    "matched_admin_name": "Lokesh Patidar"
+  },
+  {
+    "keka_id": "38d86395-105f-454e-81d9-83abc8736bc1",
+    "keka_name": "Kritika Nema",
+    "norm": "kritika nema",
+    "verdict": "EXACT",
+    "matched_admin_id": 445,
+    "matched_admin_name": "Kritika Nema"
+  },
+  {
+    "keka_id": "d2d0dc86-408f-4f87-b0a9-18d7f9a74e2a",
+    "keka_name": "Nishita Verma",
+    "norm": "nishita verma",
+    "verdict": "EXACT",
+    "matched_admin_id": 446,
+    "matched_admin_name": "Nishita Verma"
+  },
+  {
+    "keka_id": "28dc3544-a248-4e73-aabf-e1a04f63ee5f",
+    "keka_name": "Pooja Patel",
+    "norm": "pooja patel",
+    "verdict": "EXACT",
+    "matched_admin_id": 447,
+    "matched_admin_name": "Pooja  Patel"
+  },
+  {
+    "keka_id": "fd6a17b8-3a52-4eab-a3d2-43eec0c132bf",
+    "keka_name": "Aryan Khandelwal",
+    "norm": "aryan khandelwal",
+    "verdict": "EXACT",
+    "matched_admin_id": 449,
+    "matched_admin_name": "Aryan Khandelwal"
+  },
+  {
+    "keka_id": "ac10bbd8-11bb-4e61-8961-bad0b741aa11",
+    "keka_name": "Ajay Nihal",
+    "norm": "ajay nihal",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "09631b29-c371-42db-8cf9-b91ab228f058",
+    "keka_name": "Anshika Yadav",
+    "norm": "anshika yadav",
+    "verdict": "EXACT",
+    "matched_admin_id": 450,
+    "matched_admin_name": "Anshika Yadav"
+  },
+  {
+    "keka_id": "ab8c4764-c7e6-46a1-b567-d4300fe96ac1",
+    "keka_name": "Shreyanshi Gupta",
+    "norm": "shreyanshi gupta",
+    "verdict": "EXACT",
+    "matched_admin_id": 60,
+    "matched_admin_name": "Shreyanshi  Gupta"
+  },
+  {
+    "keka_id": "117b2aad-4289-40f4-8be7-7e6444d4b13a",
+    "keka_name": "Sujata Patel",
+    "norm": "sujata patel",
+    "verdict": "EXACT",
+    "matched_admin_id": 451,
+    "matched_admin_name": "Sujata Patel"
+  },
+  {
+    "keka_id": "f158027c-608e-4942-80c7-af62c4879dac",
+    "keka_name": "Jyoti Singh",
+    "norm": "jyoti singh",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "67683def-a943-4f5e-878c-a18c1cff3df1",
+    "keka_name": "Antim Rathore",
+    "norm": "antim rathore",
+    "verdict": "EXACT",
+    "matched_admin_id": 453,
+    "matched_admin_name": "Antim Rathore"
+  },
+  {
+    "keka_id": "b7bd7ce9-bfb3-427c-964b-f4708294a364",
+    "keka_name": "Ronak Pal",
+    "norm": "ronak pal",
+    "verdict": "EXACT",
+    "matched_admin_id": 454,
+    "matched_admin_name": "Ronak  Pal"
+  },
+  {
+    "keka_id": "f834ab1c-343b-44a9-8af6-5e225ff1a9c2",
+    "keka_name": "Megha Jhala",
+    "norm": "megha jhala",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "cf464445-ac1b-49fe-882e-8ff17376e8ed",
+    "keka_name": "Sujal Patidar",
+    "norm": "sujal patidar",
+    "verdict": "EXACT",
+    "matched_admin_id": 455,
+    "matched_admin_name": "Sujal Patidar"
+  },
+  {
+    "keka_id": "b17ecdbc-7770-439d-811e-487fea2d591f",
+    "keka_name": "Sagar Raghuwanshi",
+    "norm": "sagar raghuwanshi",
+    "verdict": "EXACT",
+    "matched_admin_id": 456,
+    "matched_admin_name": "Sagar Raghuwanshi"
+  },
+  {
+    "keka_id": "bd23d5bf-920f-4fbc-aa9f-f5cb4e8f26a7",
+    "keka_name": "Aditi Raj",
+    "norm": "aditi raj",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "5ec03334-9e43-40ac-ae23-ae5b9df4de2f",
+    "keka_name": "Harshal Patidar",
+    "norm": "harshal patidar",
+    "verdict": "EXACT",
+    "matched_admin_id": 462,
+    "matched_admin_name": "Harshal Patidar"
+  },
+  {
+    "keka_id": "db83a19b-b03a-49dd-9b74-c02aea31633b",
+    "keka_name": "Sanskar Tiwari",
+    "norm": "sanskar tiwari",
+    "verdict": "EXACT",
+    "matched_admin_id": 463,
+    "matched_admin_name": "Sanskar Tiwari"
+  },
+  {
+    "keka_id": "088b90ff-a006-403c-9d70-7b821a351aa6",
+    "keka_name": "Aman Sheikh",
+    "norm": "aman sheikh",
+    "verdict": "EXACT",
+    "matched_admin_id": 176,
+    "matched_admin_name": "Aman Sheikh"
+  },
+  {
+    "keka_id": "59cdf4af-4a4a-41cd-92d0-309e5d734378",
+    "keka_name": "Shivani Goud",
+    "norm": "shivani goud",
+    "verdict": "EXACT",
+    "matched_admin_id": 64,
+    "matched_admin_name": "Shivani Goud"
+  },
+  {
+    "keka_id": "36f4fc0f-50d9-4bf9-91cc-7ac2eb3da4fd",
+    "keka_name": "Monika Solanki",
+    "norm": "monika solanki",
+    "verdict": "EXACT",
+    "matched_admin_id": 464,
+    "matched_admin_name": "Monika  Solanki"
+  },
+  {
+    "keka_id": "bc0f6e01-53e8-45d3-963e-debafdc95ea6",
+    "keka_name": "Garima Jiwanani",
+    "norm": "garima jiwanani",
+    "verdict": "EXACT",
+    "matched_admin_id": 468,
+    "matched_admin_name": "Garima Jiwanani"
+  },
+  {
+    "keka_id": "9f679f7f-2431-4333-b03b-4aa261c07b40",
+    "keka_name": "Priya Sikdar",
+    "norm": "priya sikdar",
+    "verdict": "EXACT",
+    "matched_admin_id": 469,
+    "matched_admin_name": "Priya Sikdar"
+  },
+  {
+    "keka_id": "9a67aab0-1095-4fc6-b0c3-615e91506fa5",
+    "keka_name": "Nandini Jain",
+    "norm": "nandini jain",
+    "verdict": "EXACT",
+    "matched_admin_id": 470,
+    "matched_admin_name": "Nandini Jain"
+  },
+  {
+    "keka_id": "842a5a4a-cc6f-4d5e-b2da-3d4ece98b7c7",
+    "keka_name": "Ritu Prajapati",
+    "norm": "ritu prajapati",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "862783bf-d2ab-42bb-95d2-9d66800973bf",
+    "keka_name": "Prakhar Tiwari",
+    "norm": "prakhar tiwari",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "3b7b14f6-b493-40d8-8039-5f987fde4204",
+    "keka_name": "Sanket Sharma",
+    "norm": "sanket sharma",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "b3c2109d-d9b8-4d5f-99be-7f1149e6bc2c",
+    "keka_name": "Raj Sahu",
+    "norm": "raj sahu",
+    "verdict": "EXACT",
+    "matched_admin_id": 483,
+    "matched_admin_name": "Raj Sahu"
+  },
+  {
+    "keka_id": "908d5dbf-0ca7-4e4d-a132-30e85b794ea5",
+    "keka_name": "Esha Kumari",
+    "norm": "esha kumari",
+    "verdict": "EXACT",
+    "matched_admin_id": 491,
+    "matched_admin_name": "Esha Kumari"
+  },
+  {
+    "keka_id": "84826ef7-c9c1-4f29-bc28-e0f76f5cd41a",
+    "keka_name": "Devvani Tiwari",
+    "norm": "devvani tiwari",
+    "verdict": "EXACT",
+    "matched_admin_id": 489,
+    "matched_admin_name": "Devvani tiwari"
+  },
+  {
+    "keka_id": "cc562f9b-bf31-491f-a3ee-cc649a64e2a5",
+    "keka_name": "Vipul Fartade",
+    "norm": "vipul fartade",
+    "verdict": "EXACT",
+    "matched_admin_id": 66,
+    "matched_admin_name": "Vipul  Fartade"
+  },
+  {
+    "keka_id": "9a53fe10-31dd-4bdb-b717-b4a35acc90a1",
+    "keka_name": "Manya Pandey",
+    "norm": "manya pandey",
+    "verdict": "EXACT",
+    "matched_admin_id": 494,
+    "matched_admin_name": "Manya  Pandey"
+  },
+  {
+    "keka_id": "b7d8d74d-f975-4a98-9fdb-5f849c24e690",
+    "keka_name": "Punita Raghuwanshi",
+    "norm": "punita raghuwanshi",
+    "verdict": "FUZZY_0.94",
+    "matched_admin_id": 490,
+    "matched_admin_name": "Punita Raghuvanshi"
+  },
+  {
+    "keka_id": "095eb92d-97a4-4249-81e2-139d3c737076",
+    "keka_name": "Nikita Lalawat",
+    "norm": "nikita lalawat",
+    "verdict": "EXACT",
+    "matched_admin_id": 495,
+    "matched_admin_name": "Nikita  Lalawat"
+  },
+  {
+    "keka_id": "a35ae488-362f-4934-bcb9-abef96de3c51",
+    "keka_name": "Aman Rane",
+    "norm": "aman rane",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "7fc3e02a-e88d-4af2-aaff-36971e5e6590",
+    "keka_name": "Aashi Patel",
+    "norm": "aashi patel",
+    "verdict": "EXACT",
+    "matched_admin_id": 503,
+    "matched_admin_name": "Aashi Patel"
+  },
+  {
+    "keka_id": "d70a9462-c3f5-40b0-bde8-312eb0cd3605",
+    "keka_name": "Esha Bais",
+    "norm": "esha bais",
+    "verdict": "EXACT",
+    "matched_admin_id": 502,
+    "matched_admin_name": "Esha Bais "
+  },
+  {
+    "keka_id": "22d4b197-fd9d-4428-82a5-f38ccc809750",
+    "keka_name": "Taha Rajodwala",
+    "norm": "taha rajodwala",
+    "verdict": "EXACT",
+    "matched_admin_id": 486,
+    "matched_admin_name": "Taha Rajodwala"
+  },
+  {
+    "keka_id": "cd80899a-c9f2-4607-99f8-0e0259ad6b9a",
+    "keka_name": "Avni Kalra",
+    "norm": "avni kalra",
+    "verdict": "EXACT",
+    "matched_admin_id": 493,
+    "matched_admin_name": "Avni Kalra"
+  },
+  {
+    "keka_id": "2786cda0-ac17-42e7-a6e2-4f7d4454374a",
+    "keka_name": "Sanjana Likhar",
+    "norm": "sanjana likhar",
+    "verdict": "EXACT",
+    "matched_admin_id": 582,
+    "matched_admin_name": "Sanjana Likhar"
+  },
+  {
+    "keka_id": "a5d58881-743b-432f-a4e7-3527d40003b6",
+    "keka_name": "Babul Prajapati",
+    "norm": "babul prajapati",
+    "verdict": "EXACT",
+    "matched_admin_id": 497,
+    "matched_admin_name": "Babul Prajapati"
+  },
+  {
+    "keka_id": "c22fb75e-81be-4dac-8d13-119abf131274",
+    "keka_name": "Akshita Agrawal",
+    "norm": "akshita agrawal",
+    "verdict": "EXACT",
+    "matched_admin_id": 353,
+    "matched_admin_name": "Akshita Agrawal"
+  },
+  {
+    "keka_id": "5a56a347-1345-4cb7-92e6-fc5239dcd15b",
+    "keka_name": "Prathmesh Sunil Bandal",
+    "norm": "prathmesh sunil bandal",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "31c547d4-2f91-46d7-a979-116da39122fd",
+    "keka_name": "Kanishk Sharma",
+    "norm": "kanishk sharma",
+    "verdict": "EXACT",
+    "matched_admin_id": 507,
+    "matched_admin_name": "Kanishk sharma"
+  },
+  {
+    "keka_id": "61eb41c9-e7a0-484b-ade6-984aded8ec9e",
+    "keka_name": "Swati Bhaskar Borkar",
+    "norm": "swati bhaskar borkar",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "5353d217-cb34-4255-a980-56542c1a7026",
+    "keka_name": "Akshay Vyas",
+    "norm": "akshay vyas",
+    "verdict": "EXACT",
+    "matched_admin_id": 547,
+    "matched_admin_name": "Akshay Vyas"
+  },
+  {
+    "keka_id": "edbfa096-ab1c-45bd-86cf-28f598c272ed",
+    "keka_name": "Harsh Choudhary",
+    "norm": "harsh choudhary",
+    "verdict": "EXACT",
+    "matched_admin_id": 548,
+    "matched_admin_name": "Harsh Choudhary"
+  },
+  {
+    "keka_id": "8194c2d6-b2f9-4a85-abd4-bbdfb92589c8",
+    "keka_name": "Deepika Bajaj",
+    "norm": "deepika bajaj",
+    "verdict": "EXACT",
+    "matched_admin_id": 543,
+    "matched_admin_name": "deepika bajaj"
+  },
+  {
+    "keka_id": "87072876-5d85-41d3-b7cb-f3f26315f46e",
+    "keka_name": "Muskan Kesharwani",
+    "norm": "muskan kesharwani",
+    "verdict": "EXACT",
+    "matched_admin_id": 545,
+    "matched_admin_name": "Muskan Kesharwani"
+  },
+  {
+    "keka_id": "bfe5ab45-f770-40d9-959b-d688b4550717",
+    "keka_name": "Yatin Goswami",
+    "norm": "yatin goswami",
+    "verdict": "EXACT",
+    "matched_admin_id": 521,
+    "matched_admin_name": "Yatin  Goswami"
+  },
+  {
+    "keka_id": "1161b8b0-c04b-47bc-881b-f4339f68c6f8",
+    "keka_name": "Anshika Prajapat",
+    "norm": "anshika prajapat",
+    "verdict": "EXACT",
+    "matched_admin_id": 520,
+    "matched_admin_name": "Anshika Prajapat"
+  },
+  {
+    "keka_id": "b6e54abe-bf81-4c3e-a458-b4badf2ec5fd",
+    "keka_name": "Bhumika Jadham",
+    "norm": "bhumika jadham",
+    "verdict": "EXACT",
+    "matched_admin_id": 541,
+    "matched_admin_name": "Bhumika Jadham"
+  },
+  {
+    "keka_id": "7e540661-f0fd-4480-9446-ad704c202e6a",
+    "keka_name": "Dilip Singh",
+    "norm": "dilip singh",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "a0e20bb3-9f50-481f-8e28-1ab9386c8ef3",
+    "keka_name": "Pratik Singh",
+    "norm": "pratik singh",
+    "verdict": "EXACT",
+    "matched_admin_id": 546,
+    "matched_admin_name": "Pratik Singh"
+  },
+  {
+    "keka_id": "9ac60236-4dfa-4c90-857b-25be48a8f458",
+    "keka_name": "Princy Jain",
+    "norm": "princy jain",
+    "verdict": "EXACT",
+    "matched_admin_id": 542,
+    "matched_admin_name": "Princy Jain"
+  },
+  {
+    "keka_id": "f6bd87c9-af3c-4c7e-b411-7c1bc72895ad",
+    "keka_name": "Harshita Hardiya",
+    "norm": "harshita hardiya",
+    "verdict": "EXACT",
+    "matched_admin_id": 414,
+    "matched_admin_name": "Harshita Hardiya"
+  },
+  {
+    "keka_id": "2da68876-0ef4-4463-91e9-b6d6400763a1",
+    "keka_name": "Krati Jain",
+    "norm": "krati jain",
+    "verdict": "EXACT",
+    "matched_admin_id": 544,
+    "matched_admin_name": "krati jain"
+  },
+  {
+    "keka_id": "8c671740-ffcc-46b2-a207-f6b834135728",
+    "keka_name": "Mahak sahu",
+    "norm": "mahak sahu",
+    "verdict": "EXACT",
+    "matched_admin_id": 549,
+    "matched_admin_name": "Mahak Sahu"
+  },
+  {
+    "keka_id": "c0d1ad86-1620-4753-8dbe-4ed9ba4ecb12",
+    "keka_name": "Radhika Laddha",
+    "norm": "radhika laddha",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "84a7d79e-d0a6-4b0b-bc37-46bc84864f09",
+    "keka_name": "Kalpit Jain",
+    "norm": "kalpit jain",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "1c9b2424-db06-4eca-b405-08f6eb834d33",
+    "keka_name": "Advaita Wadnerkar",
+    "norm": "advaita wadnerkar",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "0cf4593e-ddcc-488f-a384-e84ef912c7f8",
+    "keka_name": "Aman Soni",
+    "norm": "aman soni",
+    "verdict": "EXACT",
+    "matched_admin_id": 809,
+    "matched_admin_name": "Aman Soni"
+  },
+  {
+    "keka_id": "98c5bea6-42ee-40ff-b880-bdae5b7f111c",
+    "keka_name": "Aayushi Pandiya",
+    "norm": "aayushi pandiya",
+    "verdict": "EXACT",
+    "matched_admin_id": 842,
+    "matched_admin_name": "Aayushi Pandiya"
+  },
+  {
+    "keka_id": "af5594a7-e375-441f-b233-8d2d4599fa1d",
+    "keka_name": "Golu Vishwakarma",
+    "norm": "golu vishwakarma",
+    "verdict": "EXACT",
+    "matched_admin_id": 65,
+    "matched_admin_name": "Golu  Vishwakarma"
+  },
+  {
+    "keka_id": "eba66fb1-835c-4f92-ab79-b56cee174034",
+    "keka_name": "Vraddhi Rathore",
+    "norm": "vraddhi rathore",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "af419384-1b41-4d74-99e3-6649c96673bd",
+    "keka_name": "Urmi Dubey",
+    "norm": "urmi dubey",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "58c79f6f-a4e0-4b9a-9f81-abde63d55a20",
+    "keka_name": "Sourabh Yadav",
+    "norm": "sourabh yadav",
+    "verdict": "EXACT",
+    "matched_admin_id": 413,
+    "matched_admin_name": "Sourabh Yadav"
+  },
+  {
+    "keka_id": "749563fa-ba5d-4b93-8d02-bf2d93793d9d",
+    "keka_name": "Shubhangi Ranade",
+    "norm": "shubhangi ranade",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "b93ea5b5-02a9-458a-a736-8bc38c3a7a32",
+    "keka_name": "Golu Vashisth",
+    "norm": "golu vashisth",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "e8d96d63-9095-420a-8e2c-179fd976a292",
+    "keka_name": "Ishika Sharma",
+    "norm": "ishika sharma",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "f337c270-af0d-489a-8662-e414ce95674b",
+    "keka_name": "Shubham Hingne",
+    "norm": "shubham hingne",
+    "verdict": "EXACT",
+    "matched_admin_id": 175,
+    "matched_admin_name": "Shubham Hingne"
+  },
+  {
+    "keka_id": "c81c695a-f492-47f6-bc4a-a5baa34c898b",
+    "keka_name": "Saloni Tiwari",
+    "norm": "saloni tiwari",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "f6332867-4619-47cb-8218-9ceb64c11207",
+    "keka_name": "Himanshu Patel",
+    "norm": "himanshu patel",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "9b36129e-2b42-4006-9911-800a96a3f0b4",
+    "keka_name": "Sakshi Kotari",
+    "norm": "sakshi kotari",
+    "verdict": "FUZZY_0.96",
+    "matched_admin_id": 90,
+    "matched_admin_name": "Sakshi Kothari"
+  },
+  {
+    "keka_id": "04b12da5-4814-407d-840d-c9f6a5b4c21b",
+    "keka_name": "Vansh Kumar Deshmukh",
+    "norm": "vansh kumar deshmukh",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "0cf3306c-419b-4625-a369-300be0c895e3",
+    "keka_name": "Bhoomi Chugwani",
+    "norm": "bhoomi chugwani",
+    "verdict": "CLOSE_BUT_BELOW_THRESHOLD_0.90",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "7635b493-7423-459d-a7ed-37de81c90910",
+    "keka_name": "Osheen Khan",
+    "norm": "osheen khan",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "8a68183d-84d9-4731-9cfb-9354be1e448f",
+    "keka_name": "Shubham Agrawal",
+    "norm": "shubham agrawal",
+    "verdict": "EXACT",
+    "matched_admin_id": 148,
+    "matched_admin_name": "Shubham Agrawal "
+  },
+  {
+    "keka_id": "d8be94fb-8cef-4c30-a303-50716e670b51",
+    "keka_name": "Aarti Dhiman",
+    "norm": "aarti dhiman",
+    "verdict": "EXACT",
+    "matched_admin_id": 22,
+    "matched_admin_name": "Aarti  Dhiman"
+  },
+  {
+    "keka_id": "bc8e2cbb-20cf-4997-877c-9adb383b6683",
+    "keka_name": "Shafiuddin Khan",
+    "norm": "shafiuddin khan",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "63a94e8a-4335-4a9c-891c-f5ed73fd7f39",
+    "keka_name": "Shubhan Chourasiya",
+    "norm": "shubhan chourasiya",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "3fe6bf04-1b50-4560-8bc5-af3d90e4657b",
+    "keka_name": "Mohammad Altaf",
+    "norm": "mohammad altaf",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "2c84748c-d174-4fe7-b002-47a8a8ddf375",
+    "keka_name": "Kratika Joshi",
+    "norm": "kratika joshi",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "afe8c10b-9180-49d6-8c5f-009f6a749d74",
+    "keka_name": "Kamal Singh",
+    "norm": "kamal singh",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "4d8b0c76-bc09-4726-b12e-a2d1d331d81c",
+    "keka_name": "Sagar Jaiswal",
+    "norm": "sagar jaiswal",
+    "verdict": "EXACT",
+    "matched_admin_id": 42,
+    "matched_admin_name": "Sagar Jaiswal"
+  },
+  {
+    "keka_id": "d99822c3-68d2-455b-8fbe-ddd4771651eb",
+    "keka_name": "Nitin Dayma",
+    "norm": "nitin dayma",
+    "verdict": "EXACT",
+    "matched_admin_id": 61,
+    "matched_admin_name": "Nitin Dayma"
+  },
+  {
+    "keka_id": "f9d71c8b-bcb4-4731-9ee1-e02839c734ee",
+    "keka_name": "Sonali Yaduwanshi",
+    "norm": "sonali yaduwanshi",
+    "verdict": "EXACT",
+    "matched_admin_id": 854,
+    "matched_admin_name": "Sonali Yaduwanshi"
+  },
+  {
+    "keka_id": "474672b8-9ceb-47cc-a019-e5df6df6c149",
+    "keka_name": "Prachi Borde",
+    "norm": "prachi borde",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "36f468d6-5207-4d65-ad38-069649c53a09",
+    "keka_name": "Asif Khan",
+    "norm": "asif khan",
+    "verdict": "EXACT",
+    "matched_admin_id": 861,
+    "matched_admin_name": "Asif Khan"
+  },
+  {
+    "keka_id": "ae40fd5a-cd09-41c7-b2db-aa7a7f267f91",
+    "keka_name": "Bhagyashree Patel",
+    "norm": "bhagyashree patel",
+    "verdict": "EXACT",
+    "matched_admin_id": 856,
+    "matched_admin_name": "Bhagyashree Patel"
+  },
+  {
+    "keka_id": "d927d048-8137-440b-af37-72e8ac4cd5a4",
+    "keka_name": "Rajat Pawar",
+    "norm": "rajat pawar",
+    "verdict": "EXACT",
+    "matched_admin_id": 868,
+    "matched_admin_name": "Rajat pawar"
+  },
+  {
+    "keka_id": "89aae315-8408-4203-b4d8-336a7a0c713b",
+    "keka_name": "Shivam Nirale",
+    "norm": "shivam nirale",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "3ea4c1e1-5ba3-48bb-826c-4af693f801ac",
+    "keka_name": "Muzammil Aalu",
+    "norm": "muzammil aalu",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "799ab167-5fda-4773-bccf-0996dac96c09",
+    "keka_name": "Nandanee Choulker",
+    "norm": "nandanee choulker",
+    "verdict": "FUZZY_0.97",
+    "matched_admin_id": 865,
+    "matched_admin_name": "Nandnee  Choulker"
+  },
+  {
+    "keka_id": "4382a171-b2c0-4f05-9dff-99c2abed1429",
+    "keka_name": "Chanchal Keshariya",
+    "norm": "chanchal keshariya",
+    "verdict": "EXACT",
+    "matched_admin_id": 871,
+    "matched_admin_name": "Chanchal  Keshariya"
+  },
+  {
+    "keka_id": "cb892024-8e76-45bb-9369-d065da3de78c",
+    "keka_name": "nimmi chauhan",
+    "norm": "nimmi chauhan",
+    "verdict": "EXACT",
+    "matched_admin_id": 879,
+    "matched_admin_name": "Nimmi  Chauhan"
+  },
+  {
+    "keka_id": "460b32a2-d2ba-453c-85ac-66e04a52f648",
+    "keka_name": "Pooja Rathore",
+    "norm": "pooja rathore",
+    "verdict": "EXACT",
+    "matched_admin_id": 894,
+    "matched_admin_name": "Pooja  Rathore"
+  },
+  {
+    "keka_id": "01aeb9fe-2b1f-4307-bb2e-72cf745b0c1c",
+    "keka_name": "Abhishek Chowdhary",
+    "norm": "abhishek chowdhary",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "3aba318b-ba74-4478-8d37-66e2a7d11fda",
+    "keka_name": "Keshav Meena",
+    "norm": "keshav meena",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "4c211c28-b7b0-418e-9bc4-ff5f95b9f360",
+    "keka_name": "Himanshu Sharma",
+    "norm": "himanshu sharma",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "5d467b61-f71a-4e08-952a-523f74274bcc",
+    "keka_name": "Yogesh Uikey",
+    "norm": "yogesh uikey",
+    "verdict": "EXACT",
+    "matched_admin_id": 913,
+    "matched_admin_name": "Yogesh  Uikey"
+  },
+  {
+    "keka_id": "87ca3104-d314-4e28-b0c9-6654ce36fc3a",
+    "keka_name": "Tanish Porwal",
+    "norm": "tanish porwal",
+    "verdict": "EXACT",
+    "matched_admin_id": 893,
+    "matched_admin_name": "Tanish  Porwal"
+  },
+  {
+    "keka_id": "5d6f56ff-986d-4023-9292-63e9eeb2ccce",
+    "keka_name": "Ashvin Namdev",
+    "norm": "ashvin namdev",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "6ddf7127-d01f-4471-9709-b90860fd1716",
+    "keka_name": "Nirmal Chouhan",
+    "norm": "nirmal chouhan",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "d9741b12-7d4c-4646-b9c7-d544dcaf77ff",
+    "keka_name": "Punam kushwah",
+    "norm": "punam kushwah",
+    "verdict": "EXACT",
+    "matched_admin_id": 895,
+    "matched_admin_name": "Punam Kushwah"
+  },
+  {
+    "keka_id": "bc422776-1493-4e42-a5ff-48c942184783",
+    "keka_name": "Aastha trivedi",
+    "norm": "aastha trivedi",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "58f1b0ee-0f19-4974-878e-2b688326d775",
+    "keka_name": "Srushti Gupta",
+    "norm": "srushti gupta",
+    "verdict": "EXACT",
+    "matched_admin_id": 903,
+    "matched_admin_name": "Srushti Gupta"
+  },
+  {
+    "keka_id": "61ebd9bb-8be4-4b43-af98-52292d8c6102",
+    "keka_name": "Gopal Chawre",
+    "norm": "gopal chawre",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "df463b26-518f-435c-bb93-48ad82ec8aab",
+    "keka_name": "Bharti Bhavsar",
+    "norm": "bharti bhavsar",
+    "verdict": "AMBIGUOUS_FUZZY",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "b82c4917-7019-4661-a2cb-d3e5f5468c88",
+    "keka_name": "Naveen Dange",
+    "norm": "naveen dange",
+    "verdict": "EXACT",
+    "matched_admin_id": 931,
+    "matched_admin_name": "Naveen  Dange"
+  },
+  {
+    "keka_id": "3dcca89f-f86a-450f-a508-232ba693c4ab",
+    "keka_name": "Abhishek Vishwakarma ",
+    "norm": "abhishek vishwakarma",
+    "verdict": "EXACT",
+    "matched_admin_id": 919,
+    "matched_admin_name": "Abhishek Vishwakarma"
+  },
+  {
+    "keka_id": "b32df0b0-1cf1-4e98-8446-e74820cea3cc",
+    "keka_name": "Harsh mourya",
+    "norm": "harsh mourya",
+    "verdict": "EXACT",
+    "matched_admin_id": 908,
+    "matched_admin_name": "Harsh  Mourya "
+  },
+  {
+    "keka_id": "2bd98099-6907-4835-bb77-e5389acfd08f",
+    "keka_name": "Gourav verfa",
+    "norm": "gourav verfa",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "fd3428aa-f78b-484b-8552-1eb703ad77c6",
+    "keka_name": "Shubham yadav",
+    "norm": "shubham yadav",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "3769c1d2-b240-4dc0-ae2b-8cce7a30bebe",
+    "keka_name": "Shivani Tiwari",
+    "norm": "shivani tiwari",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "3b251f41-b240-4cf9-8758-259ae4ce11c7",
+    "keka_name": "Anchal patidar",
+    "norm": "anchal patidar",
+    "verdict": "EXACT",
+    "matched_admin_id": 907,
+    "matched_admin_name": "Anchal  Patidar"
+  },
+  {
+    "keka_id": "8dd3b595-b1eb-483f-afae-e5dc13e50e2b",
+    "keka_name": "Nousheen khan",
+    "norm": "nousheen khan",
+    "verdict": "EXACT",
+    "matched_admin_id": 909,
+    "matched_admin_name": "Nousheen  Khan"
+  },
+  {
+    "keka_id": "17e9b0b3-4a2c-48e3-8822-e49873a44a3c",
+    "keka_name": "Bharti Bakriya",
+    "norm": "bharti bakriya",
+    "verdict": "EXACT",
+    "matched_admin_id": 912,
+    "matched_admin_name": "Bharti  Bakriya"
+  },
+  {
+    "keka_id": "74a60997-73bf-405f-9164-878c46c0dfbd",
+    "keka_name": "Ishika Gaur",
+    "norm": "ishika gaur",
+    "verdict": "EXACT",
+    "matched_admin_id": 910,
+    "matched_admin_name": "Ishika Gaur"
+  },
+  {
+    "keka_id": "fe8a4643-76ef-42ed-8b49-42a540e7ee77",
+    "keka_name": "Archita Neema",
+    "norm": "archita neema",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "21466850-31b7-4074-90f2-e0ec8f6bcb2d",
+    "keka_name": "Shruti Garg",
+    "norm": "shruti garg",
+    "verdict": "EXACT",
+    "matched_admin_id": 911,
+    "matched_admin_name": "Shruti  Garg "
+  },
+  {
+    "keka_id": "59fb17ba-1a9b-43fd-a0fb-c9d2d57e2642",
+    "keka_name": "Bidhi Singh Verma",
+    "norm": "bidhi singh verma",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "b76fca43-9ca0-4791-940d-35a78ef3d5ba",
+    "keka_name": "Jayesh Sharma",
+    "norm": "jayesh sharma",
+    "verdict": "EXACT",
+    "matched_admin_id": 933,
+    "matched_admin_name": "Jayesh Sharma"
+  },
+  {
+    "keka_id": "b506c1f9-1538-412d-b0fb-04d7a1135b44",
+    "keka_name": "Gautam bhawsar",
+    "norm": "gautam bhawsar",
+    "verdict": "EXACT",
+    "matched_admin_id": 934,
+    "matched_admin_name": "Gautam  Bhawsar "
+  },
+  {
+    "keka_id": "9766cc07-2ac9-4b84-95af-2c88895de4d4",
+    "keka_name": "Sakina Ratlamwala",
+    "norm": "sakina ratlamwala",
+    "verdict": "EXACT",
+    "matched_admin_id": 922,
+    "matched_admin_name": "Sakina  Ratlamwala"
+  },
+  {
+    "keka_id": "6ff091e3-a5cb-4372-8207-83cc0fdc1be3",
+    "keka_name": "Yadeep Songara",
+    "norm": "yadeep songara",
+    "verdict": "EXACT",
+    "matched_admin_id": 930,
+    "matched_admin_name": "Yadeep Songara"
+  },
+  {
+    "keka_id": "07473dd8-2cc6-4b0d-bdb3-0fddb6c76926",
+    "keka_name": "Vibhooti Badera",
+    "norm": "vibhooti badera",
+    "verdict": "EXACT",
+    "matched_admin_id": 945,
+    "matched_admin_name": "Vibhooti  Badera"
+  },
+  {
+    "keka_id": "f4488f9b-d950-4615-998a-7469bea232be",
+    "keka_name": "Bhumika Singh",
+    "norm": "bhumika singh",
+    "verdict": "EXACT",
+    "matched_admin_id": 928,
+    "matched_admin_name": "Bhumika  Singh"
+  },
+  {
+    "keka_id": "1e979721-143b-4b85-9987-0fb9fcb80d38",
+    "keka_name": "Muskan Gangrade",
+    "norm": "muskan gangrade",
+    "verdict": "FUZZY_0.97",
+    "matched_admin_id": 936,
+    "matched_admin_name": "Mushkan  Gangrade"
+  },
+  {
+    "keka_id": "f9f1c66d-c0f5-4a7b-bf07-7d8250aa8fbd",
+    "keka_name": "Lavisha chandani",
+    "norm": "lavisha chandani",
+    "verdict": "EXACT",
+    "matched_admin_id": 935,
+    "matched_admin_name": "Lavisha  Chandani "
+  },
+  {
+    "keka_id": "912340fb-7010-497a-8899-0adfd83eee82",
+    "keka_name": "Aarti Jagtap",
+    "norm": "aarti jagtap",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "20762b5b-cf59-410b-946b-206cd3116f52",
+    "keka_name": "Laxmi Sachdev",
+    "norm": "laxmi sachdev",
+    "verdict": "EXACT",
+    "matched_admin_id": 937,
+    "matched_admin_name": "Laxmi  Sachdev"
+  },
+  {
+    "keka_id": "a7ea0969-f39a-48ce-ab07-db537c5309e7",
+    "keka_name": "Gunjan Agrawal",
+    "norm": "gunjan agrawal",
+    "verdict": "EXACT",
+    "matched_admin_id": 944,
+    "matched_admin_name": "Gunjan  Agrawal"
+  },
+  {
+    "keka_id": "4ee8e198-86f4-4b5c-a9ad-f7439f7f504b",
+    "keka_name": "Sheetal chouhan",
+    "norm": "sheetal chouhan",
+    "verdict": "EXACT",
+    "matched_admin_id": 929,
+    "matched_admin_name": "Sheetal  Chouhan"
+  },
+  {
+    "keka_id": "cc874578-97a2-4df0-b9ef-b983eeb2fe05",
+    "keka_name": "Ajay Malviya",
+    "norm": "ajay malviya",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "47725285-bd58-412b-88a5-58a6c7fba906",
+    "keka_name": "Nandita panchal",
+    "norm": "nandita panchal",
+    "verdict": "EXACT",
+    "matched_admin_id": 950,
+    "matched_admin_name": "Nandita  Panchal "
+  },
+  {
+    "keka_id": "fcc767f2-7eee-4b12-bbf3-d936c6959f28",
+    "keka_name": "Rahul Gour",
+    "norm": "rahul gour",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "bf09597d-da1d-4b78-be3e-392a6b60917b",
+    "keka_name": "Vaishnavi Agrawal",
+    "norm": "vaishnavi agrawal",
+    "verdict": "EXACT",
+    "matched_admin_id": 411,
+    "matched_admin_name": "Vaishnavi Agrawal"
+  },
+  {
+    "keka_id": "747200bc-88d7-44bd-9916-2a629878e508",
+    "keka_name": "Vanya Khanchandani",
+    "norm": "vanya khanchandani",
+    "verdict": "EXACT",
+    "matched_admin_id": 410,
+    "matched_admin_name": "Vanya Khanchandani"
+  },
+  {
+    "keka_id": "6db7c8db-bb42-4f3c-a957-8a77b4829ebb",
+    "keka_name": "Preeti Shinde",
+    "norm": "preeti shinde",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "b28e17e1-ed33-4b2e-809f-4afe025051a3",
+    "keka_name": "Veena Mandowkar",
+    "norm": "veena mandowkar",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "6fe62f23-6ede-4844-9d84-732fddc4734c",
+    "keka_name": "Sunil Kote Kote",
+    "norm": "sunil kote kote",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "8232b6b6-7191-46cb-b8d0-ea167bd1198f",
+    "keka_name": "Meena Devkota Devkota",
+    "norm": "meena devkota devkota",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "61f92803-2ebe-4ab4-9030-2c029deac8b7",
+    "keka_name": "Vedik Yadav",
+    "norm": "vedik yadav",
+    "verdict": "EXACT",
+    "matched_admin_id": 499,
+    "matched_admin_name": "Vedik yadav"
+  },
+  {
+    "keka_id": "d693bae3-78cf-4cad-b720-c050f7d1e7fd",
+    "keka_name": "Sumit khandelwal",
+    "norm": "sumit khandelwal",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "941b7adb-d80b-4444-bc1e-3c52da0b96fa",
+    "keka_name": "Prerna Malvi Malvi",
+    "norm": "prerna malvi malvi",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "c478035e-5e3d-46b3-80ba-2964b05fa196",
+    "keka_name": "Jatin Goyal Goyal",
+    "norm": "jatin goyal goyal",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "bb7d5a80-234f-4e9e-8051-ec576bed86b8",
+    "keka_name": "Priyanshu Upadhyay",
+    "norm": "priyanshu upadhyay",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "5180303b-f44f-40f5-b32d-d9b5856ec70c",
+    "keka_name": "Anish Chaurasiya",
+    "norm": "anish chaurasiya",
+    "verdict": "EXACT",
+    "matched_admin_id": 182,
+    "matched_admin_name": "Anish chaurasiya"
+  },
+  {
+    "keka_id": "cdf9da89-0d78-4908-abf7-b46bb646db91",
+    "keka_name": "Alfiya Chandorewala",
+    "norm": "alfiya chandorewala",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "ca162d6b-0c49-4841-b07b-b7605026b1a2",
+    "keka_name": "Tanushri Shrivastava",
+    "norm": "tanushri shrivastava",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "790f5c54-ca5e-42e1-b87d-26fc0a94ef14",
+    "keka_name": "Ankita Taank",
+    "norm": "ankita taank",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "79355861-6d2b-42ce-9f7a-640f0ede1645",
+    "keka_name": "Shivani Rathore",
+    "norm": "shivani rathore",
+    "verdict": "EXACT",
+    "matched_admin_id": 338,
+    "matched_admin_name": "Shivani Rathore"
+  },
+  {
+    "keka_id": "86daf0e9-1f41-4cbc-a97e-781dc4dc561a",
+    "keka_name": "Khushi Mishra",
+    "norm": "khushi mishra",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "4bd00ea3-434c-4489-9670-4fd4268c9b41",
+    "keka_name": "Saloni Parihar",
+    "norm": "saloni parihar",
+    "verdict": "EXACT",
+    "matched_admin_id": 352,
+    "matched_admin_name": "Saloni  Parihar"
+  },
+  {
+    "keka_id": "35ec01ff-5abb-47f0-8e2d-2697bc03165d",
+    "keka_name": "Harshita Agrawal",
+    "norm": "harshita agrawal",
+    "verdict": "EXACT",
+    "matched_admin_id": 406,
+    "matched_admin_name": "Harshita Agrawal"
+  },
+  {
+    "keka_id": "cb67f82a-30f8-41bb-ad8a-25c0c8028afc",
+    "keka_name": "Varsha Yadav",
+    "norm": "varsha yadav",
+    "verdict": "EXACT",
+    "matched_admin_id": 409,
+    "matched_admin_name": "Varsha Yadav"
+  },
+  {
+    "keka_id": "4fa4f502-0776-463e-85e4-366b417e061c",
+    "keka_name": "Suhani Vijayvargiya",
+    "norm": "suhani vijayvargiya",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "beb333b6-1c24-4ea0-abdd-be219636d150",
+    "keka_name": "Deepshikha Bhakal",
+    "norm": "deepshikha bhakal",
+    "verdict": "EXACT",
+    "matched_admin_id": 160,
+    "matched_admin_name": "Deepshikha Bhakal"
+  },
+  {
+    "keka_id": "d3ae5fc8-1720-4a90-b975-c5565ea260cc",
+    "keka_name": "Akshat Sharma",
+    "norm": "akshat sharma",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "38dac0d2-42b6-4c51-b22a-64d66166d557",
+    "keka_name": "deepshri waghela",
+    "norm": "deepshri waghela",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "7fbeef04-0cae-4d21-bf22-1fd6e3cbeb71",
+    "keka_name": "Vanshika Soneja",
+    "norm": "vanshika soneja",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "a69f29bb-0a28-459c-b62e-59835d0bbceb",
+    "keka_name": "Anshul Gupta",
+    "norm": "anshul gupta",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "6b017b0d-5217-47a6-9534-8f86f4842816",
+    "keka_name": "Shreha Tiwari",
+    "norm": "shreha tiwari",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "aebf0714-dc00-475f-b250-a73805b58a8a",
+    "keka_name": "Sumit Malviya",
+    "norm": "sumit malviya",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "79573676-d585-4cfb-a191-32a4d950d7f9",
+    "keka_name": "Utkarsh Jain",
+    "norm": "utkarsh jain",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "138b0bdf-8b25-4a36-b3e4-8a72528c59fd",
+    "keka_name": "Piyush Jain",
+    "norm": "piyush jain",
+    "verdict": "CLOSE_BUT_BELOW_THRESHOLD_0.86",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "4d3eb37a-0339-4976-b028-6d9a9479e8ea",
+    "keka_name": "Asmita Karnik",
+    "norm": "asmita karnik",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "673a7e71-f152-46b9-bbf4-bef4482633a8",
+    "keka_name": "Preeti Mohan Hinduja",
+    "norm": "preeti mohan hinduja",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "558e92c3-92fd-447a-9743-3933df656f05",
+    "keka_name": "Shivangi Sharma",
+    "norm": "shivangi sharma",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "4bb3a33f-6f0d-474a-b3ba-d62f607c8e42",
+    "keka_name": "Vibhor Shukla",
+    "norm": "vibhor shukla",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "987b3e8d-00fd-4476-a9e5-9e6434b4b34c",
+    "keka_name": "Nandini jain",
+    "norm": "nandini jain",
+    "verdict": "EXACT",
+    "matched_admin_id": 470,
+    "matched_admin_name": "Nandini Jain"
+  },
+  {
+    "keka_id": "a92dd988-0adb-4c61-bd34-d3f08d149148",
+    "keka_name": "Anjali Patware",
+    "norm": "anjali patware",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "4b32da3f-b5d5-4c1b-bd44-a9b014cda8e1",
+    "keka_name": "Riya Sharma",
+    "norm": "riya sharma",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "74745174-19a7-4f83-bdae-5ead553a9ca5",
+    "keka_name": "Shivami Jain",
+    "norm": "shivami jain",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "a1c4a43b-8e81-4195-805f-517fcff4ab68",
+    "keka_name": "Vinita Ahirwar",
+    "norm": "vinita ahirwar",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "bf83aa07-e76f-4df6-bcd5-ee428eb811f6",
+    "keka_name": "Sahiba Manghani",
+    "norm": "sahiba manghani",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "6452be88-5926-4952-976d-589e1971e971",
+    "keka_name": "Nikisha Karda",
+    "norm": "nikisha karda",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "a7bbf2a0-ae35-4d43-99c8-84e0b21402b3",
+    "keka_name": "Shivani Rajput",
+    "norm": "shivani rajput",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "b1d99645-8442-403d-b60c-d41f26eac92e",
+    "keka_name": "Shahid Patel",
+    "norm": "shahid patel",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "ccdd43ee-c50c-4479-a2ec-d1fe1779b023",
+    "keka_name": "PALAK GUPTA",
+    "norm": "palak gupta",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "03d2bb1f-f363-4c8b-8cf5-809473027760",
+    "keka_name": "Mahima Bairagi",
+    "norm": "mahima bairagi",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "eb75f9df-8671-4deb-acb8-19cc39e5c636",
+    "keka_name": "Divya Sawlani",
+    "norm": "divya sawlani",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "f781f468-e0d0-45eb-806d-28abd15b7662",
+    "keka_name": "Sambhavi Mukati",
+    "norm": "sambhavi mukati",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "b03a3efa-bcb0-4dda-bede-a567b0832938",
+    "keka_name": "MADHAVI RATHORE",
+    "norm": "madhavi rathore",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "b8d6928d-d919-4c7d-ad8e-d5d58918fb1c",
+    "keka_name": "Naina Jain",
+    "norm": "naina jain",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "50ed521f-70b2-4226-802e-8272da0df301",
+    "keka_name": "Shivani Agarwal",
+    "norm": "shivani agarwal",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "f1ab4e5e-a146-411e-bbb6-8bc485395d54",
+    "keka_name": "Shivam Singh",
+    "norm": "shivam singh",
+    "verdict": "NO_CANDIDATE_AT_ALL",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  },
+  {
+    "keka_id": "326a1ee3-4e09-4696-9d02-8cf19ddcec4c",
+    "keka_name": "Sneha Kandhari",
+    "norm": "sneha kandhari",
+    "verdict": "EXACT",
+    "matched_admin_id": 41,
+    "matched_admin_name": "Sneha Kandhari"
+  },
+  {
+    "keka_id": "fd35c77b-a018-44d4-96e3-2cb302a05b4e",
+    "keka_name": "Pratibha Tomar",
+    "norm": "pratibha tomar",
+    "verdict": "AMBIGUOUS_EXACT",
+    "matched_admin_id": null,
+    "matched_admin_name": null
+  }
+]

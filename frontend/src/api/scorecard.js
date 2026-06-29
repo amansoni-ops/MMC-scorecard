@@ -1,25 +1,25 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE || '/api',
+  baseURL: '/api',
   withCredentials: true,
   timeout: 300000,   // 5 minutes — SQL Server queries can be slow on first run
 })
 
 api.interceptors.request.use(req => {
-  console.log(`[API →] ${req.method?.toUpperCase()} ${req.url} - scorecard.js:10`, req.params || '')
+  console.log(`[API →] ${req.method?.toUpperCase()} ${req.url}`, req.params || '')
   return req
 })
 
 api.interceptors.response.use(
   res => {
-    console.log(`[API ✓] ${res.status} ${res.config.url} - scorecard.js:16`)
+    console.log(`[API ✓] ${res.status} ${res.config.url}`)
     return res
   },
   err => {
     const status = err.response?.status
     const url    = err.config?.url
-    console.error(`[API ✗] ${status ?? 'NETWORK'} ${url} - scorecard.js:22`, err.message)
+    console.error(`[API ✗] ${status ?? 'NETWORK'} ${url}`, err.message)
     return Promise.reject(err)
   }
 )
