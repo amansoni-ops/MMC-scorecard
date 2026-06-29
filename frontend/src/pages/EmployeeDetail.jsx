@@ -470,18 +470,29 @@ export default function EmployeeDetail() {
                         {(o.early_entries || []).length > 0 ? (
                           <table className="w-full text-xs">
                             <thead><tr style={{ borderBottom: '1px solid var(--border)' }}>
-                              {['Date','Expected','Actual','Shortfall'].map((h,i) => (
+                              {['Date','Shift End (IST)','Punch Out (IST)','Shortfall'].map((h,i) => (
                                 <th key={i} className="text-left py-1.5 pr-4 font-semibold" style={{ color: 'var(--text-faint)' }}>{h}</th>
                               ))}
                             </tr></thead>
-                            <tbody>{(o.early_entries).map((e, i) => (
+                            <tbody>{(o.early_entries).map((e, i) => {
+                              const toClockTime = s => { if (!s) return '—'; const m = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/.exec(s); if (!m) return s; const h = parseInt(m[4],10), mi = parseInt(m[5],10); const p = h>=12?'pm':'am'; const dh = h%12===0?12:h%12; return `${String(dh).padStart(2,'0')}:${String(mi).padStart(2,'0')} ${p}` }
+                              const sh = e.shortfall_hours, sm = e.shortfall_minutes
+                              let shortfallLabel = '—'
+                              if (sh !== null && sh !== undefined && sm !== null && sm !== undefined) {
+                                const parts = []
+                                if (sh > 0) parts.push(`${sh}h`)
+                                if (sm > 0 || sh === 0) parts.push(`${sm}m`)
+                                shortfallLabel = parts.join(' ')
+                              }
+                              return (
                               <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
                                 <td className="py-1.5 pr-4 font-medium" style={{ color: 'var(--text)' }}>{e.date}</td>
-                                <td className="py-1.5 pr-4" style={{ color: 'var(--text-muted)' }}>{e.expected_hours}h</td>
-                                <td className="py-1.5 pr-4 font-medium" style={{ color: '#EF4444' }}>{e.actual_hours}h</td>
-                                <td className="py-1.5 font-bold" style={{ color: '#EF4444' }}>-{e.shortfall_hrs}h</td>
+                                <td className="py-1.5 pr-4" style={{ color: 'var(--text-muted)' }}>{toClockTime(e.shift_end)}</td>
+                                <td className="py-1.5 pr-4 font-medium" style={{ color: '#EF4444' }}>{toClockTime(e.punch_out)}</td>
+                                <td className="py-1.5 font-bold" style={{ color: '#EF4444' }}>{shortfallLabel}</td>
                               </tr>
-                            ))}</tbody>
+                              )
+                            })}</tbody>
                           </table>
                         ) : <p className="text-xs" style={{ color: '#10B981' }}>✓ No early exits this month</p>}
                       </>
@@ -582,6 +593,7 @@ export default function EmployeeDetail() {
     </div>
   )
 }
+
 
 // import { useEffect, useState } from 'react'
 // import { useParams, useSearchParams, useNavigate } from 'react-router-dom'
@@ -1028,8 +1040,8 @@ export default function EmployeeDetail() {
 //                               ))}
 //                             </tr></thead>
 //                             <tbody>{(o.late_entries).map((e, i) => {
-//                               const toIST = s => { try { return new Date(s.replace(' UTC','Z')).toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'}) } catch { return s } }
-//                               let delay = '—'; try { const d = Math.round((new Date(e.punch_in?.replace(' UTC','Z')) - new Date(e.shift_start?.replace(' UTC','Z')))/60000); if(d>0) delay=`+${d} min` } catch {}
+//                               const toIST = s => { if (!s) return '—'; const m = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/.exec(s); if (!m) return s; const h = parseInt(m[4],10), mi = parseInt(m[5],10); const p = h>=12?'pm':'am'; const dh = h%12===0?12:h%12; return `${String(dh).padStart(2,'0')}:${String(mi).padStart(2,'0')} ${p}` }
+//                               let delay = '—'; try { const parseLocal = s => new Date((s||'').replace(' IST','')); const d = Math.round((parseLocal(e.punch_in) - parseLocal(e.shift_start))/60000); if(d>0) delay=`+${d} min` } catch {}
 //                               return (
 //                                 <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
 //                                   <td className="py-1.5 pr-4 font-medium" style={{ color: 'var(--text)' }}>{e.date}</td>
@@ -1167,4 +1179,3 @@ export default function EmployeeDetail() {
 //     </div>
 //   )
 // }
-

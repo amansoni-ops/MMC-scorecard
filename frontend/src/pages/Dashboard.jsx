@@ -203,8 +203,27 @@ function KPIDrillDown({ kpiKey, kpi, emp }) {
 
   if (kpiKey === 'leaves') {
     const dates = o?.leave_dates || []
+    // NEW: surfaces joining/exit info when this person joined or left
+    // DURING the month being viewed — explains a smaller-than-usual
+    // working-days count at a glance, instead of leaving it unexplained.
+    const joinNote = o?.joined_mid_month && o?.joining_date
+      ? `Joined ${o.joining_date}` : null
+    const exitNote = o?.exited_mid_month && o?.exit_date
+      ? `Left ${o.exit_date}` : null
     return (
       <div className="px-6 py-3">
+        {(joinNote || exitNote) && (
+          <div className="flex gap-3 mb-3 flex-wrap">
+            {joinNote && (
+              <span className="text-xs px-2 py-1 rounded-lg font-medium"
+                style={{ background: '#DCFCE7', color: '#15803D' }}>{joinNote}</span>
+            )}
+            {exitNote && (
+              <span className="text-xs px-2 py-1 rounded-lg font-medium"
+                style={{ background: '#FEE2E2', color: '#DC2626' }}>{exitNote}</span>
+            )}
+          </div>
+        )}
         <div className="flex gap-8 text-sm mb-3">
           <span style={{ color: 'var(--text-muted)' }}>
             Working days: <b style={{ color: 'var(--text)' }}>{o?.working_days ?? '—'}</b>
@@ -351,6 +370,21 @@ function KPIDrillDown({ kpiKey, kpi, emp }) {
 
   if (kpiKey === 'early_leavings') {
     const entries = o?.early_entries || []
+    // FIXED per explicit request: no more hardcoded "Expected: 8.5h"
+    // stamp, no more decimal-hours math against that fixed assumption.
+    // Expected/Actual now show the person's REAL shift-end and punch-out
+    // clock times; Shortfall shows real hours+minutes early, not a
+    // decimal-hours subtraction.
+    const toClockTime = (s) => {
+      if (!s) return '—'
+      const match = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/.exec(s)
+      if (!match) return s
+      const hours = parseInt(match[4], 10)
+      const mins  = parseInt(match[5], 10)
+      const period = hours >= 12 ? 'pm' : 'am'
+      const displayH = hours % 12 === 0 ? 12 : hours % 12
+      return `${String(displayH).padStart(2,'0')}:${String(mins).padStart(2,'0')} ${period}`
+    }
     return (
       <div className="px-6 py-3">
         <div className="flex gap-8 text-sm mb-3">
@@ -359,33 +393,43 @@ function KPIDrillDown({ kpiKey, kpi, emp }) {
           </span>
           <span style={{ color: '#10B981' }}>Full days: <b>{o?.full_days ?? '—'}</b></span>
           <span style={{ color: '#EF4444' }}>Early exits: <b>{o?.early_days ?? '—'}</b></span>
-          <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>Expected: 8.5h</span>
         </div>
         {entries.length > 0 ? (
           <table className="w-full text-xs">
             <thead>
               <tr style={{ borderBottom: '1px solid var(--border)' }}>
-                {['Date', 'Expected Hours', 'Actual Hours', 'Shortfall'].map((h, i) => (
+                {['Date', 'Shift End (IST)', 'Punch Out (IST)', 'Shortfall'].map((h, i) => (
                   <th key={i} className="text-left py-1.5 pr-4 font-semibold"
                     style={{ color: 'var(--text-faint)' }}>{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {entries.map((e, i) => (
-                <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                  <td className="py-1.5 pr-4 font-medium" style={{ color: 'var(--text)' }}>{e.date}</td>
-                  <td className="py-1.5 pr-4 tabular-nums" style={{ color: 'var(--text-muted)' }}>
-                    {e.expected_hours}h
-                  </td>
-                  <td className="py-1.5 pr-4 tabular-nums font-medium" style={{ color: '#EF4444' }}>
-                    {e.actual_hours}h
-                  </td>
-                  <td className="py-1.5 font-bold" style={{ color: '#EF4444' }}>
-                    -{e.shortfall_hrs}h
-                  </td>
-                </tr>
-              ))}
+              {entries.map((e, i) => {
+                const h = e.shortfall_hours
+                const m = e.shortfall_minutes
+                let shortfallLabel = '—'
+                if (h !== null && h !== undefined && m !== null && m !== undefined) {
+                  const parts = []
+                  if (h > 0) parts.push(`${h}h`)
+                  if (m > 0 || h === 0) parts.push(`${m}m`)
+                  shortfallLabel = parts.join(' ')
+                }
+                return (
+                  <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
+                    <td className="py-1.5 pr-4 font-medium" style={{ color: 'var(--text)' }}>{e.date}</td>
+                    <td className="py-1.5 pr-4 tabular-nums" style={{ color: 'var(--text-muted)' }}>
+                      {toClockTime(e.shift_end)}
+                    </td>
+                    <td className="py-1.5 pr-4 tabular-nums font-medium" style={{ color: '#EF4444' }}>
+                      {toClockTime(e.punch_out)}
+                    </td>
+                    <td className="py-1.5 font-bold" style={{ color: '#EF4444' }}>
+                      {shortfallLabel}
+                    </td>
+                  </tr>
+                )
+              })}
             </tbody>
           </table>
         ) : (
@@ -844,6 +888,7 @@ export default function Dashboard() {
   )
 }
 
+
 // import { useEffect, useState, useRef } from 'react'
 // import { useNavigate } from 'react-router-dom'
 // import { motion, AnimatePresence } from 'framer-motion'
@@ -1079,33 +1124,53 @@ export default function Dashboard() {
 
 //   if (kpiKey === 'late_comings') {
 //     const entries = o?.late_entries || []
+//     // FIXED: punch_in/shift_start values from the backend are ALREADY in
+//     // IST — confirmed against real Keka source data, which carries no
+//     // timezone marker at all and is recorded directly in IST by the
+//     // physical punch machine. The OLD version of this function treated
+//     // these as UTC (via the 'UTC' suffix the backend used to send) and
+//     // asked the browser to convert UTC->IST, which DOUBLE-SHIFTED an
+//     // already-correct time forward by +5:30 (e.g. a real 2:47 PM punch
+//     // displayed as 8:17 PM). The backend now sends an 'IST' suffix
+//     // instead of 'UTC' — this function just extracts and formats the
+//     // clock value directly, with NO timezone conversion at all.
 //     const toIST = (s) => {
 //       if (!s) return '—'
-//       try {
-//         return new Date(s.replace(' UTC', 'Z'))
-//           .toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Kolkata' })
-//       } catch { return s }
+//       // Expected format: "2026-06-19 14:47:40 IST"
+//       const match = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/.exec(s)
+//       if (!match) return s
+//       const hours = parseInt(match[4], 10)
+//       const mins  = parseInt(match[5], 10)
+//       const period = hours >= 12 ? 'pm' : 'am'
+//       const displayH = hours % 12 === 0 ? 12 : hours % 12
+//       return `${String(displayH).padStart(2,'0')}:${String(mins).padStart(2,'0')} ${period}`
 //     }
 //     // DISPLAY-ONLY grace label: shift_start + 15 minutes, formatted the
 //     // same way as every other time on this card. This is NOT the real
 //     // backend grace threshold (which is 20 minutes) — it's purely a
 //     // simplified figure shown to employees, per explicit request.
 //     //
-//     // Reads o.shift_start (the person's modal/typical shift start,
-//     // PRESENT FOR EVERY EMPLOYEE regardless of late history) instead of
-//     // entries[0].shift_start (only exists for people who have at least
-//     // one late arrival — which was causing blank grace for everyone
-//     // with zero late days). o.shift_start is a plain "HH:MM" 24-hour
-//     // string (e.g. "10:30"), NOT a UTC datetime string, so it's parsed
-//     // differently here than the per-row punch times elsewhere on this card.
+//     // FIXED: previously read entries[0].shift_start — but that only
+//     // exists for employees who have at least one LATE arrival this month
+//     // (late_entries is empty for everyone else, causing blank grace for
+//     // most people), AND it's a full UTC datetime string, a different
+//     // format from o.shift_start. Now reads o.shift_start instead — this
+//     // is the person's own modal/typical shift start, present for EVERY
+//     // employee regardless of late history, stored as a plain 'HH:MM'
+//     // 24-hour string (e.g. "14:30"), NOT a UTC datetime string — parsed
+//     // accordingly here rather than reusing the UTC-string parsing logic
+//     // that caused garbled/wrong times before.
 //     const graceLabel = (() => {
-//       const shiftStartHHMM = o?.shift_start
+//       const shiftStartHHMM = o?.shift_start   // e.g. "14:30", always present per-person
 //       if (!shiftStartHHMM || shiftStartHHMM === '--') return '—'
 //       const match = /^(\d{1,2}):(\d{2})$/.exec(shiftStartHHMM)
 //       if (!match) return '—'
 //       const hours = parseInt(match[1], 10)
 //       const mins  = parseInt(match[2], 10)
 //       if (Number.isNaN(hours) || Number.isNaN(mins)) return '—'
+//       // Build a plain Date in LOCAL time terms purely as a calculation
+//       // aid for adding 15 minutes — no timezone conversion happens here
+//       // since shift_start is already the IST clock time itself, not UTC.
 //       const totalMins = (hours * 60 + mins + 15) % (24 * 60)
 //       const graceH = Math.floor(totalMins / 60)
 //       const graceM = totalMins % 60
@@ -1137,9 +1202,19 @@ export default function Dashboard() {
 //               {entries.map((e, i) => {
 //                 let delay = '—'
 //                 try {
+//                   // FIXED: backend now sends "...IST" suffix instead of
+//                   // "...UTC". Since we only need the DIFFERENCE between
+//                   // punch_in and shift_start (both in the same IST frame),
+//                   // the absolute timezone doesn't matter for this
+//                   // subtraction — just need a format Date() parses
+//                   // consistently for both. Replacing ' IST' with nothing
+//                   // and letting Date() parse as a naive local datetime
+//                   // works correctly here since both sides get the same
+//                   // (irrelevant) local-timezone treatment, cancelling out
+//                   // in the subtraction.
+//                   const parseLocal = (s) => new Date((s || '').replace(' IST', ''))
 //                   const mins = Math.round(
-//                     (new Date(e.punch_in?.replace(' UTC','Z')) -
-//                      new Date(e.shift_start?.replace(' UTC','Z'))) / 60000
+//                     (parseLocal(e.punch_in) - parseLocal(e.shift_start)) / 60000
 //                   )
 //                   if (mins > 0) delay = `+${mins} min`
 //                 } catch {}
@@ -1659,4 +1734,3 @@ export default function Dashboard() {
 //     </div>
 //   )
 // }
-

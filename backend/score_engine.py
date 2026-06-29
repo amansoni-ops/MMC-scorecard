@@ -4,6 +4,8 @@ import importlib, time
 from config import TIERS
 import local_db
 
+from employee_kpi_cache import get_employee_kpi_rows, get_employee_trend
+
 # ── Fallback working-days helper (replaces old viasocket.get_working_days)
 # Used only when a person has ZERO rows in leaves/late_comings/early_leavings
 # (i.e. they don't exist in keka_attendance.py's output at all). The old
@@ -201,6 +203,117 @@ def get_employee_detail(admin_id, month, year):
     result['total_score']=round(sum(sc),2) if sc else 0.0; result['tier']=_get_tier(result['total_score'])
     return result if result.get('employee_name') else None
 
+# SCORE_ENGINE.PY — ADD THESE NEW FUNCTIONS
+# ================================================================
+# These are ADDITIONS, not replacements of calculate_scores() (the main
+# dashboard list still works the way it does today — only the SLOW
+# single-employee path and the trend chart get rewritten). Add this near
+# the bottom of score_engine.py, after the existing functions.
+
+# ------------------------------------------------------------------------
+
+
+
+def get_employee_detail_fast(admin_id, month, year):
+    """
+    FAST replacement for get_employee_detail(). Reads pre-computed
+    per-KPI rows from employee_kpi_cache (populated by
+    populate_employee_cache.py in the background) instead of calling
+    fetch() on every KPI for every employee just to extract one row.
+
+    Falls back to the OLD slow path automatically if this employee has
+    no cached rows yet for this month (e.g. population job hasn't run
+    yet, or this is a brand-new employee) — so nothing breaks, it's
+    just slow on a true cache-miss, exactly like before.
+    """
+    cached_rows = get_employee_kpi_rows(admin_id, month, year)
+
+    if not cached_rows:
+        print(f'[ScoreEngine] No cached rows for AdminID={admin_id} {month}/{year} '
+              f'— falling back to live computation (slow path)')
+        return get_employee_detail(admin_id, month, year)   # old function, unchanged
+
+    is_conv = cached_rows[0]['is_conversion']
+    active_kpis = local_db.get_active_kpis()
+    relevant_kpis = active_kpis if is_conv else [k for k in active_kpis if k['key'] in ATTENDANCE_KPI_KEYS]
+    weights = _norm_weights(relevant_kpis)
+
+    by_kpi_key = {r['kpi_key']: r for r in cached_rows}
+
+    result = {
+        'admin_id': admin_id,
+        'employee_name': cached_rows[0]['employee_name'],
+        'department': cached_rows[0]['department'],
+        'is_conversion': is_conv,
+        'kpi_breakdown': {},
+    }
+
+    kpi_meta = {k['key']: k for k in active_kpis}
+
+    for kpi in relevant_kpis:
+        kpi_key = kpi['key']
+        row = by_kpi_key.get(kpi_key)
+        if not row:
+            continue   # this KPI has no cached row for this person (rare — KPI added after population ran)
+
+        w = weights[kpi_key]
+        score = round(row['success_ratio'] * w / 100, 4) if row['success_ratio'] is not None else None
+
+        result['kpi_breakdown'][kpi_key] = {
+            'name': kpi['name'],
+            'description': kpi.get('description', ''),
+            'weight': round(w, 2),
+            'numerator': row['numerator'],
+            'denominator': row['denominator'],
+            'success_ratio': row['success_ratio'],
+            'failure_ratio': row['failure_ratio'],   # NEW — precomputed, no inline 100-x needed in frontend
+            'score': score,
+            'orders': row['orders'],
+        }
+
+    sc = [kb['score'] for kb in result['kpi_breakdown'].values() if kb['score'] is not None]
+    result['total_score'] = round(sum(sc), 2) if sc else 0.0
+    result['tier'] = _get_tier(result['total_score'])
+    return result
+
+
+def get_employee_trend_fast(admin_id, year):
+    """
+    FAST replacement for whatever currently powers the year-trend
+    chart. Reads cached rows for every month of the year and computes
+    each month's total_score using CURRENT kpi weights — so the trend
+    line reflects live KPI toggle state, not whatever weights were
+    active when each month was originally populated.
+    """
+    by_month = get_employee_trend(admin_id, year)   # {month: {kpi_key: success_ratio}}
+    active_kpis = local_db.get_active_kpis()
+
+    trend = []
+    for month in range(1, 13):
+        month_data = by_month.get(month)
+        if not month_data:
+            trend.append({'month': month, 'total_score': None})
+            continue
+
+        # Determine conversion membership for THIS month from cache,
+        # since weight normalization differs for conversion vs
+        # attendance-only employees.
+        is_conv_kpis = {k for k in CONVERSION_KPI_KEYS if k in month_data}
+        is_conv = len(is_conv_kpis) > 0
+        relevant_kpis = active_kpis if is_conv else [k for k in active_kpis if k['key'] in ATTENDANCE_KPI_KEYS]
+        weights = _norm_weights(relevant_kpis)
+
+        total = 0.0
+        any_score = False
+        for kpi in relevant_kpis:
+            kpi_key = kpi['key']
+            if kpi_key in month_data and month_data[kpi_key] is not None:
+                total += month_data[kpi_key] * weights[kpi_key] / 100
+                any_score = True
+
+        trend.append({'month': month, 'total_score': round(total, 2) if any_score else None})
+
+    return trend
 
 # import importlib, time
 # from config import TIERS

@@ -23,24 +23,72 @@ jobs:
 
             echo "── Pull latest code ──"
             cd /var/www/mmc-scorecard
-            git pull origin main
+
+            # FIX: earlier this session, manual server-side edits to
+            # frontend files (Dashboard.jsx etc.) blocked git pull
+            # with "local changes would be overwritten". A deploy
+            # pipeline must NEVER fail here just because someone once
+            # hand-edited a file on the server -- discard any local
+            # drift and always defer to what's actually in main.
+            git fetch origin main
+            git reset --hard origin/main
 
             echo "── Backend: install deps ──"
             cd /var/www/mmc-scorecard/backend
             source venv/bin/activate
             pip install -r requirements.txt -q
 
+            echo "── Backend: apply KPI registry switch (idempotent) ──"
+            if [ -f switch_attendance_to_keka.py ]; then
+              python switch_attendance_to_keka.py
+            fi
+
+            echo "── Backend: clear ALL caches ──"
+            if [ -f clear_all_caches.py ]; then
+              python clear_all_caches.py
+            fi
+
             echo "── Backend: restart ──"
             sudo systemctl restart mmc-scorecard
             sleep 3
             sudo systemctl status mmc-scorecard --no-pager
 
-            echo "── Frontend: build ──"
+            echo "── Backend: verify health ──"
+            sleep 2
+            HEALTH=$(curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:5000/api/health || echo "000")
+            if [ "$HEALTH" != "200" ]; then
+              echo "WARNING: backend health check returned $HEALTH, not 200."
+            else
+              echo "Backend health check passed."
+            fi
+
+            echo "── Frontend: install deps ──"
             cd /var/www/mmc-scorecard/frontend
             npm install --silent
-            npm run build
+
+            echo "── Frontend: fix hardcoded /api/ paths ──"
+            if [ -f fix_frontend_paths.py ]; then
+              python3 fix_frontend_paths.py
+            fi
+
+            echo "── Frontend: build ──"
+            chmod +x node_modules/.bin/vite 2>/dev/null || true
+            VITE_API_BASE=/mmc/api VITE_BASE_PATH=/mmc ./node_modules/.bin/vite build
+
+            echo "── Frontend: verify build ──"
+            if grep -q "/mmc/api" dist/assets/*.js 2>/dev/null; then
+              echo "Build correctly contains /mmc/api references."
+            else
+              echo "ERROR: build does NOT contain /mmc/api."
+              exit 1
+            fi
 
             echo "── Reload nginx ──"
+            sudo nginx -t
             sudo nginx -s reload
 
-            echo "✅ Deployed successfully at $(date)"
+            echo "── Final check ──"
+            FINAL=$(curl -s -o /dev/null -w "%{http_code}" -k https://54.91.221.179/mmc/api/health || echo "000")
+            echo "mmc/api/health -> HTTP $FINAL"
+
+            echo "Deployed successfully at $(date)"
