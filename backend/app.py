@@ -61,6 +61,79 @@ def logout_route():
 @_auth_required
 def me(): return jsonify({'user':session['user']})
 
+
+# ── User management ─────────────────────────────────────────────────────
+@app.get('/api/users')
+@_auth_required
+@_admin_required
+def list_users():
+    return jsonify({'users': local_db.get_all_users()})
+ 
+ 
+@app.post('/api/users')
+@_auth_required
+@_admin_required
+def create_user_route():
+    body = request.get_json() or {}
+    try:
+        user = local_db.create_user(
+            body.get('username', ''),
+            body.get('password', ''),
+            body.get('role', 'viewer')
+        )
+        return jsonify({'ok': True, 'user': user})
+    except ValueError as e:
+        return jsonify({'error': str(e)}), 400
+ 
+ 
+@app.delete('/api/users/<int:user_id>')
+@_auth_required
+@_admin_required
+def delete_user_route(user_id):
+    try:
+        local_db.delete_user(user_id, session['user']['username'])
+        return jsonify({'ok': True})
+    except ValueError as e:
+        return jsonify({'error': str(e)}), 400
+ 
+ 
+@app.post('/api/users/<int:user_id>/password')
+@_auth_required
+@_admin_required
+def admin_reset_password_route(user_id):
+    """Admin resets ANY user's password — does not require knowing the
+    old password, since this is an admin-privileged action."""
+    body = request.get_json() or {}
+    try:
+        local_db.change_password(user_id, body.get('new_password', ''))
+        return jsonify({'ok': True})
+    except ValueError as e:
+        return jsonify({'error': str(e)}), 400
+ 
+ 
+@app.post('/api/me/password')
+@_auth_required
+def change_my_password_route():
+    """Self-service password change for the CURRENTLY LOGGED IN user.
+    Requires the current password as confirmation — unlike the admin
+    reset route above, this does NOT bypass knowing the old password,
+    since any logged-in user (not just admins) can reach this route."""
+    body = request.get_json() or {}
+    current_password = body.get('current_password', '')
+    new_password = body.get('new_password', '')
+ 
+    username = session['user']['username']
+    verified = local_db.verify_user(username, current_password)
+    if not verified:
+        return jsonify({'error': 'Current password is incorrect'}), 401
+ 
+    try:
+        local_db.change_password_by_username(username, new_password)
+        return jsonify({'ok': True})
+    except ValueError as e:
+        return jsonify({'error': str(e)}), 400
+ 
+
 # ── Scores ─────────────────────────────────────────────────────────────────
 @app.get('/api/scores')
 @_auth_required

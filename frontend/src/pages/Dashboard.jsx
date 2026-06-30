@@ -8,6 +8,7 @@ import {
 import { useStore } from '../store/appStore'
 import { MONTHS, YEARS, fmtScore, monthName } from '../utils/formatters'
 import KPIWeightManager from '../components/KPIWeightManager'
+import UserManager from '../components/UserManager'
 import StatCard from '../components/cards/StatCard'
 import {
   Search, Settings, RefreshCw, TrendingUp, Users, Trophy,
@@ -617,6 +618,7 @@ export default function Dashboard() {
   const [search, setSearch]   = useState('')
   const [dept,   setDept]     = useState('All')
   const [showKPI, setShowKPI] = useState(false)
+  const [showUsers, setShowUsers] = useState(false)
   const [formulaEmp, setFEmp] = useState(null)
   const [sortBy, setSortBy]   = useState('name_asc')
   const reqId = useRef(0)
@@ -715,6 +717,9 @@ export default function Dashboard() {
         </div>
         <button onClick={()=>setShowKPI(true)} className="btn btn-secondary">
           <Settings size={13}/> Configure KPIs
+        </button>
+        <button onClick={()=>setShowUsers(true)} className="btn btn-secondary">
+          <Users size={13}/> Manage Users
         </button>
       </div>
 
@@ -850,10 +855,22 @@ export default function Dashboard() {
                              position: 'sticky', top: 0, zIndex: 10 }}>
                   {['#','EMPLOYEE','TIER',
                     ...visibleKPIs.map(k=>k.name.split(' ').slice(0,2).join(' ').toUpperCase()),
-                    'SCORE',''].map((h,i)=>(
-                    <th key={i} className={`px-4 py-2.5 text-xs font-semibold ${i>=5?'text-right':'text-left'}`}
-                      style={{ color:'var(--text-faint)', background:'var(--bg)' }}>{h}</th>
-                  ))}
+                    'SCORE',''].map((h,i)=>{
+                    // #, EMPLOYEE, TIER are the first 3 columns (indices 0-2)
+                    // — stay left-aligned, names/ranks read naturally that way.
+                    // KPI columns sit between TIER and SCORE — center-aligned
+                    // to match the centered bar+percentage content rendered
+                    // beneath them in each row.
+                    // SCORE and the trailing blank info-icon column are the
+                    // LAST TWO entries — stay right-aligned.
+                    const isFirstThree = i < 3
+                    const isLastTwo = i >= (3 + visibleKPIs.length)
+                    const align = isFirstThree ? 'text-left' : isLastTwo ? 'text-right' : 'text-center'
+                    return (
+                      <th key={i} className={`px-4 py-2.5 text-xs font-semibold ${align}`}
+                        style={{ color:'var(--text-faint)', background:'var(--bg)' }}>{h}</th>
+                    )
+                  })}
                 </tr>
               </thead>
               <tbody>
@@ -882,6 +899,7 @@ export default function Dashboard() {
 
       <AnimatePresence>
         {showKPI && <KPIWeightManager onClose={()=>{setShowKPI(false);fetchData(month,year)}}/>}
+        {showUsers && <UserManager onClose={()=>setShowUsers(false)}/>}
         {formulaEmp && <FormulaModal emp={formulaEmp} onClose={()=>setFEmp(null)}/>}
       </AnimatePresence>
     </div>
