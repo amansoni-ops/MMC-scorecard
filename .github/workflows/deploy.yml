@@ -5,7 +5,104 @@ on:
     branches: [ main ]
 
 jobs:
+  # NOTE: this project has no existing pytest/unit test suite. Rather
+  # than invent fake tests that don't verify anything real (false
+  # confidence is worse than no tests), this job runs the checks that
+  # ARE genuinely meaningful right now: Python syntax validity across
+  # every backend file, import-time crash detection (catches a typo in
+  # any KPI/SQL logic before it reaches the server), and a frontend
+  # build dry-run (which already implicitly catches JS syntax errors).
+  # The deploy job below only runs if this one passes.
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Backend — syntax check every Python file
+        run: |
+          cd backend
+          echo "Checking syntax of every .py file..."
+          find . -name "*.py" -not -path "*/venv/*" -not -path "*/__pycache__/*" -print0 \
+            | xargs -0 -n1 python -m py_compile
+          echo "All backend files have valid Python syntax."
+
+      - name: Backend — install dependencies
+        run: |
+          cd backend
+          pip install -r requirements.txt -q
+
+      - name: Backend — import-time crash check
+        # Catches a typo or broken import in any KPI module, score_engine,
+        # app.py, etc. BEFORE it ever reaches the server. A file with
+        # valid syntax can still crash on import (missing dependency,
+        # NameError, wrong function signature referenced at module
+        # level) — this catches that class of bug specifically.
+        run: |
+          cd backend
+          python -c "
+          import importlib, sys, pkgutil
+
+          modules_to_check = [
+              'score_engine', 'local_db', 'db', 'employee_kpi_cache',
+              'populate_employee_cache', 'keka_name_mapper',
+          ]
+
+          # Also check every kpis/*.py module
+          import os
+          for fname in os.listdir('kpis'):
+              if fname.endswith('.py') and fname != '__init__.py':
+                  modules_to_check.append(f'kpis.{fname[:-3]}')
+
+          failed = []
+          for mod in modules_to_check:
+              try:
+                  importlib.import_module(mod)
+                  print(f'  OK: {mod}')
+              except Exception as e:
+                  print(f'  FAILED: {mod} -> {type(e).__name__}: {e}')
+                  failed.append(mod)
+
+          if failed:
+              print(f'\\n{len(failed)} module(s) failed to import: {failed}')
+              sys.exit(1)
+          print(f'\\nAll {len(modules_to_check)} modules imported successfully.')
+          "
+
+      - name: Frontend — install dependencies
+        run: |
+          cd frontend
+          npm install --silent
+
+      - name: Frontend — build dry-run (catches JS/JSX syntax errors)
+        run: |
+          cd frontend
+          VITE_API_BASE=/mmc/api VITE_BASE_PATH=/mmc npx vite build
+
+      - name: Frontend — verify subpath fixes are present in source
+        # Same regression checks as the deploy job, run here too so a
+        # bad commit is blocked BEFORE deploy runs at all, not just
+        # caught after server-side files are already overwritten.
+        run: |
+          cd frontend
+          if ! grep -q 'src="/mmc/assets/' dist/index.html; then
+            echo "ERROR: built index.html does not reference /mmc/assets/."
+            exit 1
+          fi
+          if ! grep -q "BrowserRouter basename=" src/main.jsx; then
+            echo "ERROR: src/main.jsx has no BrowserRouter basename."
+            exit 1
+          fi
+          echo "Subpath configuration verified."
+
   deploy:
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
@@ -80,6 +177,46 @@ jobs:
               echo "Build correctly contains /mmc/api references."
             else
               echo "ERROR: build does NOT contain /mmc/api."
+              exit 1
+            fi
+
+            # FIX: confirmed this session that VITE_BASE_PATH being
+            # passed on the command line is NOT enough on its own --
+            # vite.config.js must actually read it via loadEnv() and set
+            # base:, or index.html silently gets built with root-relative
+            # asset paths (/assets/...) instead of /mmc/assets/..., which
+            # 404s in the browser with no console error pointing at the
+            # real cause. This check catches that regression automatically
+            # instead of requiring another full manual debugging session.
+            echo "── Frontend: verify index.html has correct /mmc/ asset paths ──"
+            if grep -q 'src="/mmc/assets/' dist/index.html 2>/dev/null; then
+              echo "index.html correctly references /mmc/assets/ for JS."
+            else
+              echo "ERROR: index.html does NOT reference /mmc/assets/ for its script tag."
+              echo "This means vite.config.js's base setting did not apply during this"
+              echo "build -- check that vite.config.js uses loadEnv() and reads"
+              echo "VITE_BASE_PATH into its base: value, not a plain hardcoded object."
+              cat dist/index.html
+              exit 1
+            fi
+
+            # FIX: confirmed this session that BrowserRouter needs an
+            # explicit basename (set from import.meta.env.BASE_URL) or
+            # the app silently renders BLANK with zero console error —
+            # React Router finds no matching route for e.g. "/mmc/login"
+            # when its routes are defined as "/login". Source-level check
+            # here, since this can't be detected from the built output
+            # the same way the base-path issue can (a missing basename
+            # doesn't change what bytes end up in the bundle in an
+            # easily-greppable way, but the SOURCE pattern is reliable).
+            echo "── Frontend: verify BrowserRouter has basename set ──"
+            if grep -q "BrowserRouter basename=" src/main.jsx 2>/dev/null; then
+              echo "main.jsx correctly sets BrowserRouter basename."
+            else
+              echo "ERROR: src/main.jsx's <BrowserRouter> has no basename prop."
+              echo "This causes the app to render BLANK under /mmc/ with NO console"
+              echo "error -- React Router silently fails to match any route. Fix:"
+              echo '  <BrowserRouter basename={import.meta.env.BASE_URL}>'
               exit 1
             fi
 
