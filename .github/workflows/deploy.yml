@@ -25,6 +25,24 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install Microsoft ODBC Driver for SQL Server
+        # FIX: the import-time check below fails on a fresh CI runner
+        # because db.py raises RuntimeError immediately on import if no
+        # ODBC driver is present — confirmed via real CI run: db.py,
+        # kpis.missing_status, kpis.delayed_conversion, and
+        # kpis.post_conversion all failed to import purely because of
+        # this, despite having zero actual syntax/logic problems. This
+        # installs the same driver already present on the production
+        # server, so the import check verifies what it's meant to
+        # (module structure/syntax), not live SQL Server connectivity
+        # (which is separately verified by the deploy job's health
+        # check against the real server afterward).
+        run: |
+          curl https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
+          curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+          sudo apt-get update
+          ACCEPT_EULA=Y sudo apt-get install -y msodbcsql18 unixodbc-dev
+
       - name: Backend — syntax check every Python file
         run: |
           cd backend
