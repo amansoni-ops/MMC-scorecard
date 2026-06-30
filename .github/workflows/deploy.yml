@@ -101,6 +101,7 @@ jobs:
       - name: Frontend — build dry-run (catches JS/JSX syntax errors)
         run: |
           cd frontend
+          chmod +x node_modules/.bin/vite 2>/dev/null || true
           VITE_API_BASE=/mmc/api VITE_BASE_PATH=/mmc npx vite build
 
       - name: Frontend — verify subpath fixes are present in source
